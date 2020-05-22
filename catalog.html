@@ -35,6 +35,50 @@
          <div class="filter">
             <h2>Стоимость:</h2>
           <!-- Здесь будет фильтр и форма. -->
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="grid" value="flexible" id="filter-flexible">
+                  <label for="filter-flexible">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
+                  <label for="filter-block-of-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="filter-gallery" checked>
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="basket" id="filter-basket" checked>
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
          </div>
 
          <div class="catalog">
@@ -105,6 +149,27 @@
             <a href="">Следующая</a>
          </div>
       </main>
+
+      <section>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+          <label for="name-surename">Ваше имя:</label>
+          <input id="name-surename" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+
+          <p>
+            <label for="email-field">Ваш e-mail</label>
+            <input id="email-field" type="email" name="email" placeholder="email@example.com">
+          </p>
+
+          <p>
+          <label for="comments-field">Текст письма:</label>
+          <textarea name="comments-field" rows="8" cols="80">В свободной форме</textarea>
+          </p>
+
+          <button type="button">Отправить</button>
+        </form>
+      </section>
 
       <footer class="main-footer">
          <section class="contacts">
