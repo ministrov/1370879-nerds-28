@@ -34,7 +34,21 @@
 
          <div class="filter">
             <h2>Стоимость:</h2>
-          <!-- Здесь будет фильтр и форма. -->
+
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <input type="range" min="0" max="15000" step="1">
+            </p>
+            <p>
+              <input type="text" name="min-price" id="from-number" value="0">
+              <label for="from-number">от</label>
+            </p>
+            <p>
+              <input type="text" name="max-price" id="to-number" value="15000">
+              <label for="to-number">до</label>
+            </p>
+          </form>
+
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Сетка:</legend>
@@ -151,6 +165,9 @@
       </main>
 
       <section>
+
+        <h2>Напишите нам</h2>
+
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="name-surname">Ваше имя:</label>
@@ -164,7 +181,7 @@
 
           <p>
             <label for="comments-field">Текст письма:</label>
-            <textarea name="comments-field" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            <textarea name="text" id="comments-field" rows="8" cols="80" placeholder="В свободной форме"></textarea>
           </p>
 
           <button type="submit">Отправить</button>
