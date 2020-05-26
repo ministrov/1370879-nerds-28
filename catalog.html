@@ -92,6 +92,8 @@
                 </li>
               </ul>
             </fieldset>
+
+            <button type="button">Показать</button>
           </form>
          </div>
 
@@ -110,8 +112,8 @@
                   </li>
                </ul>
                <div class="catalog-filter-arrows">
-                  <a href="" class="arrows-down"></a>
-                  <a href="" class="arrows-up"></a>
+                  <a href="" class="arrow-down" aria-label="Стрелка каталога вниз"></a>
+                  <a href="" class="arrow-up" aria-label="Стрелка каталога вверх"></a>
                </div>
             </div>
          </div>
@@ -176,7 +178,7 @@
 
           <p>
             <label for="input-mail">Ваш e-mail</label>
-            <input id="input-mail" type="email" name="email" placeholder="email@example.com">
+            <input id="input-mail" type="email" name="email" placeholder="email@example.com" aria-labelledby="label-mail">
           </p>
 
           <p>
@@ -185,7 +187,7 @@
           </p>
 
           <button type="submit">Отправить</button>
-          <button type="button">Закрыть</button>
+          <button type="button" aria-label="Close">Закрыть</button>
         </form>
       </section>
 

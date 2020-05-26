@@ -35,9 +35,15 @@
          <section class="slider">
             <h2 class="visually-hidden">Преимущества</h2>
             <div class="slider-controls">
-              <button type="button"></button>
-              <button type="button"></button>
-              <button type="button"></button>
+              <button type="button">
+                <span class="visually-hidden">cлайдер1</span>
+              </button>
+              <button type="button">
+                <span class="visually-hidden">слайдер2</span>
+              </button>
+              <button type="button">
+                <span class="visually-hidden">слайдер3</span>
+              </button>
             </div>
             <ul class="slider-list">
               <li class="slider-list-item">
@@ -149,7 +155,7 @@
 
           <p>
             <label for="input-mail">Ваш e-mail</label>
-            <input id="input-mail" type="email" name="email" placeholder="email@example.com">
+            <input id="input-mail" type="email" name="email" placeholder="email@example.com" aria-labelledby="label-mail">
           </p>
 
           <p>
@@ -160,7 +166,7 @@
          </p>
 
           <button type="submit">Отправить</button>
-          <button type="button">Закрыть</button>
+          <button type="button" aria-label="Close">Закрыть</button>
         </form>
       </section>
 
