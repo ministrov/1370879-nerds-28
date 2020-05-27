@@ -1,19 +1,22 @@
 /* Variables */
 
 :root {
-  -- basic-black: #000000;
-  -- basic-light-dark: #D4D4D4;
-  -- basic-grey: #EEEEEE;
-  -- basic-dark-grey: #DFDFDF;
-  -- basic-red: #FB565A;
-  -- basic-dark-red: #E74246;
-  -- basic-green: #00CA74;
-  -- basic-dark-green: #00BC6C;
-  -- basic-yellow: #EFC84A;
-  -- basic-dark-yellow: #EAB534;
-  -- basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-light-dark: #D4D4D4;
+  --basic-grey: #EEEEEE;
+  --basic-dark-grey: #DFDFDF;
+  --basic-red: #FB565A;
+  --basic-dark-red: #E74246;
+  --basic-active-red: #D7373B;
+  --basic-green: #00CA74;
+  --basic-dark-green: #00BC6C;
+  --basic-active-green: #00AA62;
+  --basic-yellow: #EFC84A;
+  --basic-dark-yellow: #EAB534;
+  --basic-active-yellow: #E5A722;
+  --basic-white: #ffffff;
 
-  -- special: #283136;
+  --special: #283136;
 }
 
 /* Global */
@@ -26,7 +29,115 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: var(-- basic-red);
-  background-color: var(-- basic-white);
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 
+}
+
+/* Main navigation */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--basic-grey)
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.site-navigation-list {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation-list a,
+.basket-nav a {
+  color: var(--basic-black);
+}
+
+.site-navigation-list a:hover,
+.site-navigation-list a:focus,
+.basket-nav a:hover,
+.basket-nav a:focus {
+  color: var(--basic-red);
+}
+
+/* products */
+
+.products-list {
+  list-style: none;
+}
+
+.products-list-item {
+  text-align: center;
+}
+
+.products-list-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* buttons */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button:active {
+  background-color: var(--basic-active-red);
+}
+
+/* main-footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  background-color: #E1E1E1;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social a:hover,
+.social a:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.social a:active {
+  background-color: var(--basic-active-red);
+}
+
+.discount-text b {
+  font-size: 36px;
 }
