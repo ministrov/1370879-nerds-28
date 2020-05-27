@@ -141,3 +141,19 @@ img {
 .discount-text b {
   font-size: 36px;
 }
+
+/* Catalog */
+
+.catalog-page h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+.templates-cards {
+  text-align: center;
+}
+
+.templates-cards ul {
+  list-style: none;
+}
