@@ -89,6 +89,12 @@ img {
   text-transform: uppercase;
 }
 
+/* hidden form*/
+
+.main-page-form {
+  display: none;
+}
+
 /* buttons */
 
 .button {
@@ -156,4 +162,8 @@ img {
 
 .templates-cards ul {
   list-style: none;
+}
+
+.catalog-form {
+  display: none;
 }
