@@ -5,6 +5,7 @@
   --basic-light-dark: #D4D4D4;
   --basic-grey: #EEEEEE;
   --basic-dark-grey: #DFDFDF;
+  --basic-light-grey: #E1E1E1;
   --basic-red: #FB565A;
   --basic-dark-red: #E74246;
   --basic-active-red: #D7373B;
@@ -40,11 +41,22 @@ body {
   font-family: "Roboto"
   src:
     url("roboto.woff2") format("woff2"),
-    url("roboto.woff") format("woff"),
-    url("robotobold.woof2") format("woff2"),
-    url("robotobold.woff") format("woff"),
+    url("roboto.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Roboto"
+  src:
     url("robotomedium.woff2") format("woff2"),
     url("robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto"
+  src:
+    url("robotobold.woff2") format("woff2"),
+    url("robotobold.woff") format("woff");
 }
 
 /* Main navigation */
@@ -192,6 +204,33 @@ img {
   list-style: none;
 }
 
+
+.social-item a {
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  background-color: var(--basic-light-grey);
+  border-radius: 50%;
+}
+
+ a.logo-vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a.logo-facebook {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a.logo-instagram {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .social a {
   background-color: #E1E1E1;
 }
@@ -215,6 +254,14 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
+}
+
+/* main-nav */
+
+.is-active {
+  display: inline-block;
+  border-bottom: 2px solid;
+  border-color: var(--basic-red);
 }
 
 .templates-cards {
