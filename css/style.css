@@ -38,7 +38,7 @@ body {
 /* Roboto-Regular,Medium,Bold */
 
 @font-face {
-  font-family: "Roboto"
+  font-family: "Roboto";
   src:
     url("roboto.woff2") format("woff2"),
     url("roboto.woff") format("woff");
@@ -46,14 +46,14 @@ body {
 }
 
 @font-face {
-  font-family: "Roboto"
+  font-family: "Roboto";
   src:
     url("robotomedium.woff2") format("woff2"),
     url("robotomedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto"
+  font-family: "Roboto";
   src:
     url("robotobold.woff2") format("woff2"),
     url("robotobold.woff") format("woff");
