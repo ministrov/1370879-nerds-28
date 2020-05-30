@@ -139,7 +139,7 @@ img {
 
 /* hidden form*/
 
-.main-page-form {
+.modal {
   display: none;
 }
 
@@ -266,11 +266,13 @@ a.logo-instagram {
 
 /* main-nav */
 
-.is-active {
+.site-navigation-list a.is-active {
   display: inline-block;
   border-bottom: 2px solid;
   border-color: var(--basic-red);
 }
+
+/* Templates */
 
 .templates-cards {
   text-align: center;
@@ -278,6 +280,10 @@ a.logo-instagram {
 
 .templates-cards ul {
   list-style: none;
+}
+
+.templates-card-item {
+  margin-bottom: 20px;
 }
 
 .templates-card-item h3 a {
@@ -288,14 +294,20 @@ a.logo-instagram {
   text-transform: uppercase;
 }
 
+.templates-card-item h3 a:hover,
+.templates-card-item h3 a:focus {
+  color: var(--basic-red);
+}
+
+.templates-card-item h3 a:active {
+  opacity: 0.3
+}
+
 .templates-card-item p {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-}
-
-.catalog-form {
-  display: none;
+  color: #666666;
 }
 
 /* buttons */
@@ -320,4 +332,47 @@ a.logo-instagram {
 .button-filter:active {
   background-color: rgba(213, 213, 213, 0.6);
   color: rgba(213, 213, 213, 0.6);
+}
+
+.button-templates {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.button-products-green {
+  background-color: var(--basic-green);
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 40px;
+}
+
+.button-products-green:hover,
+.button-products-green:focus {
+  background-color: var(--basic-dark-green);
+}
+
+.button-products-green:active {
+  background-color: var(--basic-active-green);
+  opacity: 0.6;
+}
+
+.button-products-yellow {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 40px;
+  background-color: var(--basic-yellow);
+}
+
+.button-products-yellow:hover,
+.button-products-yellow:focus {
+  background-color: var(--basic-dark-yellow);
+}
+
+.button-products-yellow:active {
+  background-color: var(--basic-active-yellow);
+  opacity: 0.6;
 }
