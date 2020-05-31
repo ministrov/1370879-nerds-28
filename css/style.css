@@ -434,6 +434,37 @@ a.logo-instagram {
   border-color: var(--basic-red);
 }
 
+/* filter*/
+
+.filter h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.header-text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.catalog h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-link1 {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+
 /* Templates */
 
 .templates-cards {
