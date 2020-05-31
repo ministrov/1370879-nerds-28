@@ -112,6 +112,69 @@ img {
   opacity: 0.3;
 }
 
+/* Slider*/
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-list-item-first {
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-list-item-first h3 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+}
+
+.slider-list-item-first p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--special);
+}
+
+.slider-list-item-second {
+  background-image: url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-list-item-second h3 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+}
+
+.slider-list-item-second p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--special);
+}
+
+.slider-list-item-third {
+  background-image: url("../img/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-list-item-third h3 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+}
+
+.slider-list-item-third p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--special);
+}
+
 /* visually-hidden */
 
 .visually-hidden {
@@ -148,6 +211,43 @@ img {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+/* Promo  */
+
+.promo-text h3 {
+  font-size: 45px;
+  line-height: 45px;
+  text-align: left;
+}
+
+.promo-text p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--special);
+}
+
+.promo-text b {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--special);
+}
+
+.promo-text-list {
+  list-style: none;
+}
+
+.promo-statistics-list {
+  list-style: none;
+}
+
+/* partners */
+
+.partners-list {
+  list-style: none;
+  text-align: center;
 }
 
 /* hidden form*/
@@ -246,6 +346,18 @@ img {
 .main-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.contacts h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts address {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
 }
 
 .social {
