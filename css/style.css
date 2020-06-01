@@ -527,6 +527,43 @@ a.logo-instagram {
   color: #666666;
 }
 
+/* Pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-button-active {
+  min-width: 50px;
+  min-height: 50px;
+  border: 2px solid #EEEEEE;
+  background-color: var(--basic-white);
+  margin-left: 11px;
+}
+
+.pagination-button-second {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: var(--basic-grey);
+  margin-left: 11px;
+}
+
+.pagination-button-third {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: var(--basic-grey);
+  margin-left: 11px;
+}
+
+.pagination-button-next {
+  min-width: 260px;
+  min-height: 50px;
+  background-color: var(--basic-grey);
+  margin-left: 11px;
+}
+
+
 /* buttons */
 
 .button-filter {
