@@ -94,61 +94,36 @@ img {
   list-style: none;
 }
 
-.slider-list-item-first {
+
+.slider-list-item h3 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+}
+
+.slider-list-item p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--special);
+}
+
+.slider-list-item.first-slider {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.slider-list-item-first h3 {
-  font-size: 55px;
-  line-height: 55px;
-  text-align: left;
-}
-
-.slider-list-item-first p {
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color: var(--special);
-}
-
-.slider-list-item-second {
+.slider-list-item.second-slider {
   background-image: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.slider-list-item-second h3 {
-  font-size: 55px;
-  line-height: 55px;
-  text-align: left;
-}
-
-.slider-list-item-second p {
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color: var(--special);
-}
-
-.slider-list-item-third {
+.slider-list-item.third-slider {
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
   background-position: right;
-}
-
-.slider-list-item-third h3 {
-  font-size: 55px;
-  line-height: 55px;
-  text-align: left;
-}
-
-.slider-list-item-third p {
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color: var(--special);
 }
 
 /* visually-hidden */
@@ -209,6 +184,7 @@ img {
   line-height: 24px;
   font-weight: bold;
   color: var(--special);
+  text-transform: uppercase;
 }
 
 .promo-text-list {
@@ -217,6 +193,26 @@ img {
 
 .promo-statistics-list {
   list-style: none;
+}
+
+.promo-statistics span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-statistics-item p:first-child {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.promo-statistics-item p:nth-child(2) {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special);
+  font-weight: 400;
 }
 
 /* partners */
@@ -356,9 +352,14 @@ img {
   font-weight: bold;
 }
 
+.contacts-number {
+  color: #666666;
+}
+
 .contacts address {
   font-size: 16px;
   line-height: 18px;
+  font-style: normal;
   color: #666666;
 }
 
@@ -407,6 +408,7 @@ a.logo-instagram {
 }
 
 .social a:active {
+  background-color: var(--basic-active-red);
   opacity: 0.4;
 }
 
@@ -448,35 +450,41 @@ a.logo-instagram {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .header-text {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .catalog h2 {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .catalog-filter-list {
   list-style: none;
 }
 
-.catalog-filter-link1 {
+.catalog-filter.filter-link {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
-.catalog-filter-link2 {
+.filter-link1 {
   opacity: 0.5;
+  text-transform: uppercase;
 }
 
-.catalog-filter-link3 {
+.filter-link2 {
+  text-transform: uppercase;
   opacity: 0.5;
 }
 
