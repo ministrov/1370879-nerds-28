@@ -35,30 +35,6 @@ body {
 
 }
 
-/* Roboto-Regular,Medium,Bold */
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    url("../fonts/roboto.woff2") format("woff2"),
-    url("../fonts/roboto.woff") format("woff");
-
-}
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    url("../fonts/robotomedium.woff2") format("woff2"),
-    url("../fonts/robotomedium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    url("../fonts/robotobold.woff2") format("woff2"),
-    url("../fonts/robotobold.woff") format("woff");
-}
-
 /* Main navigation */
 
 a {
@@ -414,6 +390,12 @@ a.logo-instagram {
   font-weight: 700;
 }
 
+.discount-text p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
 /* Catalog */
 
 .catalog-page h1 {
@@ -462,6 +444,14 @@ a.logo-instagram {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black);
+}
+
+.catalog-filter-link2 {
+  opacity: 0.5;
+}
+
+.catalog-filter-link3 {
+  opacity: 0.5;
 }
 
 
