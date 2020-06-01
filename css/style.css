@@ -248,6 +248,8 @@ img {
 }
 
 .button-slider {
+  min-width: 240px;
+  box-sizing: border-box;
   padding-left: 54px;
   padding-right: 54px;
   font-size: 16px;
@@ -255,7 +257,19 @@ img {
   font-weight: 500;
 }
 
+.button-slider:hover,
+.button-slider:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-slider:active {
+  background-color: var(--basic-active-red);
+  opacity: 0.6;
+}
+
 .button-products {
+  min-width: 160px;
+  box-sizing: border-box;
   padding-left: 40px;
   padding-right: 39px;
   font-size: 16px;
@@ -301,6 +315,8 @@ img {
 
 
 .button-contacts {
+  min-width: 219px;
+  box-sizing: border-box;
   padding-left: 44px;
   padding-right: 44px;
   font-size: 16px;
@@ -308,12 +324,22 @@ img {
   font-weight: 500;
 }
 
-.button:hover,
-.button:focus {
+.button-contacts:hover,
+.button-contacts:focus {
   background-color: var(--basic-dark-red);
 }
 
-.button:active {
+.button-contacts:active {
+  background-color: var(--basic-active-red);
+  opacity: 0.6;
+}
+
+.button-products:hover,
+.button-products:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-products:active {
   background-color: var(--basic-active-red);
 }
 
@@ -496,6 +522,7 @@ a.logo-instagram {
 /* buttons */
 
 .button-filter {
+  min-width: 260px;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 88px;
@@ -505,6 +532,7 @@ a.logo-instagram {
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black);
+  box-sizing: border-box;
 }
 
 .button-filter:hover,
