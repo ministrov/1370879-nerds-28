@@ -5,6 +5,7 @@
   --basic-light-dark: #D4D4D4;
   --basic-grey: #EEEEEE;
   --basic-dark-grey: #DFDFDF;
+  --basic-active-grey: #D5D5D5;
   --basic-light-grey: #E1E1E1;
   --basic-red: #FB565A;
   --basic-dark-red: #E74246;
@@ -267,7 +268,6 @@ img {
 
 .button-slider:active {
   background-color: var(--basic-active-red);
-  opacity: 0.6;
 }
 
 .button-products {
@@ -295,7 +295,6 @@ img {
 
 .button-products-green:active {
   background-color: var(--basic-active-green);
-  opacity: 0.6;
 }
 
 .button-products-yellow {
@@ -313,7 +312,6 @@ img {
 
 .button-products-yellow:active {
   background-color: var(--basic-active-yellow);
-  opacity: 0.6;
 }
 
 
@@ -334,7 +332,6 @@ img {
 
 .button-contacts:active {
   background-color: var(--basic-active-red);
-  opacity: 0.6;
 }
 
 .button-products:hover,
@@ -591,6 +588,34 @@ a.logo-instagram::before {
   line-height: 50px;
 }
 
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: var(--basic-dark-grey);
+}
+
+.pagination-button-active:hover,
+.pagination-button-active:focus {
+  background-color: var(--basic-dark-grey);
+}
+
+.pagination-button-next:hover,
+.pagination-button-next:focus {
+  background-color: var(--basic-dark-grey);
+}
+
+.pagination-button:active {
+  background-color: var(--basic-active-grey);
+}
+
+.pagination-button-active:active {
+  background-color: var(--basic-active-grey);
+}
+
+.pagination-button-next:active {
+  background-color: var(--basic-active-grey);
+}
+
+
 
 /* buttons */
 
@@ -627,4 +652,13 @@ a.logo-instagram::before {
   padding-left: 72px;
   padding-right: 72px;
   box-sizing: border-box;
+}
+
+.button-templates:hover,
+.button-templates:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-templates:active {
+  background-color: var(-basic-active-red);
 }
