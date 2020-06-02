@@ -409,7 +409,7 @@ a.logo-instagram {
 
 .social a:active {
   background-color: var(--basic-active-red);
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .discount-text b {
@@ -539,6 +539,8 @@ a.logo-instagram {
   min-height: 50px;
   border: 2px solid #EEEEEE;
   background-color: var(--basic-white);
+  text-align: center;
+  line-height: 50px;
 }
 
 .pagination-button-second {
@@ -546,6 +548,8 @@ a.logo-instagram {
   min-height: 50px;
   background-color: var(--basic-grey);
   margin-left: 11px;
+  text-align: center;
+  line-height: 50px;
 
 }
 
@@ -554,6 +558,8 @@ a.logo-instagram {
   min-height: 50px;
   background-color: var(--basic-grey);
   margin-left: 11px;
+  text-align: center;
+  line-height: 50px;
 }
 
 .pagination-button-next {
@@ -561,6 +567,8 @@ a.logo-instagram {
   min-height: 50px;
   background-color: var(--basic-grey);
   margin-left: 11px;
+  text-align: center;
+  line-height: 50px;
 }
 
 
