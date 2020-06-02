@@ -270,6 +270,10 @@ img {
   background-color: var(--basic-active-red);
 }
 
+.button-slider:active {
+  color: rgba(255,255,255,0.3);
+}
+
 .button-products {
   min-width: 160px;
   box-sizing: border-box;
@@ -278,6 +282,19 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.button-products:hover,
+.button-products:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-products:active {
+  background-color: var(--basic-active-red);
+}
+
+.button-products:active {
+  color: rgba(255,255,255,0.3);
 }
 
 .button-products-green {
@@ -297,6 +314,10 @@ img {
   background-color: var(--basic-active-green);
 }
 
+.button-products-green:active {
+  color: rgba(255,255,255,0.3);
+}
+
 .button-products-yellow {
   padding-top: 17px;
   padding-bottom: 15px;
@@ -314,6 +335,9 @@ img {
   background-color: var(--basic-active-yellow);
 }
 
+.button-products-yellow:active {
+  color: rgba(255,255,255,0.3);
+}
 
 .button-contacts {
   min-width: 219px;
@@ -334,13 +358,8 @@ img {
   background-color: var(--basic-active-red);
 }
 
-.button-products:hover,
-.button-products:focus {
-  background-color: var(--basic-dark-red);
-}
-
-.button-products:active {
-  background-color: var(--basic-active-red);
+.button-contacts:active {
+  color: rgba(255,255,255,0.3);
 }
 
 /* main-footer */
