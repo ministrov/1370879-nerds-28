@@ -427,10 +427,6 @@ a.logo-instagram::before {
   transform:translate(-50%, -50%);
 }
 
-.social a::before:active {
-  background-color: var(--basic-active-red);
-  opacity: 0.3
-}
 
 .social a {
   background-color: #E1E1E1;
@@ -441,6 +437,14 @@ a.logo-instagram::before {
   background-color: var(--basic-dark-red);
 }
 
+.social a:active {
+  background-color: var(--basic-active-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social a:active::before {
+  opacity: 0.3;
+}
 
 .discount-text b {
   font-size: 36px;
