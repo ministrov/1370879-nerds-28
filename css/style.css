@@ -658,8 +658,11 @@ a.logo-instagram::before {
 }
 
 .button-filter:active {
-  background-color: rgba(213, 213, 213, 0.6);
-  color: rgba(213, 213, 213, 0.6);
+  background-color: var(--basic-active-grey);
+}
+
+.button-filter:active {
+  color: rgba(255,255,255,0.3);
 }
 
 .button-templates {
