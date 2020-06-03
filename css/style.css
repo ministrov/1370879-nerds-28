@@ -539,7 +539,7 @@ a.logo-instagram::before {
   opacity: 0.6
 }
 
-.catalog-filte-link:active {
+.catalog-filter-link:active {
   color: var(--basic-black);
 }
 
