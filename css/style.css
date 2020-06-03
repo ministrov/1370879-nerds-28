@@ -2,7 +2,9 @@
 
 :root {
   --basic-black: #000000;
+  --basic-light-black: #444444;
   --basic-light-dark: #D4D4D4;
+  --basic-exclusive-dark: #666666;
   --basic-grey: #EEEEEE;
   --basic-dark-grey: #DFDFDF;
   --basic-active-grey: #D5D5D5;
@@ -17,6 +19,7 @@
   --basic-dark-yellow: #EAB534;
   --basic-active-yellow: #E5A722;
   --basic-white: #ffffff;
+  --basic-special-white: rgba(255,255,255,0.3);
 
   --special: #283136;
 }
@@ -40,8 +43,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Main navigation */
-
 a {
   text-decoration: none;
 }
@@ -51,9 +52,55 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-items: start;
+}
+
+/* Main navigation */
+
 .main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
   background-color: var(--basic-grey)
 }
+
+.main-nav-wrapper {
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+/* Logo */
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+/* container */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-navigation {
+  outline: 5px solid blue;
+  outline-offset: -5px;
+}
+
 
 .main-nav {
   font-size: 16px;
@@ -62,8 +109,11 @@ img {
   color: var(--basic-black);
 }
 
+
 .site-navigation-list {
   list-style: none;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation-list a {
@@ -72,6 +122,8 @@ img {
 
 .basket-nav {
   text-transform: uppercase;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 /* User navigation */
@@ -294,7 +346,7 @@ img {
 }
 
 .button-products:active {
-  color: rgba(255,255,255,0.3);
+  color: var(--basic-special-white);
 }
 
 .button-products-green {
@@ -315,7 +367,7 @@ img {
 }
 
 .button-products-green:active {
-  color: rgba(255,255,255,0.3);
+  color: var(--basic-special-white);
 }
 
 .button-products-yellow {
@@ -336,7 +388,7 @@ img {
 }
 
 .button-products-yellow:active {
-  color: rgba(255,255,255,0.3);
+  color: var(--basic-special-white);
 }
 
 .button-contacts {
@@ -359,7 +411,7 @@ img {
 }
 
 .button-contacts:active {
-  color: rgba(255,255,255,0.3);
+  color: var(--basic-special-white);
 }
 
 /* main-footer */
@@ -376,14 +428,14 @@ img {
 }
 
 .contacts-number {
-  color: #666666;
+  color: var(--basic-exclusive-dark);
 }
 
 .contacts address {
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
-  color: #666666;
+  color: var(--basic-exclusive-dark);
 }
 
 .social {
@@ -445,7 +497,7 @@ a.logo-instagram::before {
 
 
 .social a {
-  background-color: #E1E1E1;
+  background-color: var(--basic-light-grey);
 }
 
 .social a:hover,
@@ -471,7 +523,7 @@ a.logo-instagram::before {
 .discount-text p {
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: var(--basic-light-black);
 }
 
 /* Catalog */
@@ -579,7 +631,7 @@ a.logo-instagram::before {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: #666666;
+  color: var(--basic-exclusive-dark);
 }
 
 /* Pagination */
@@ -672,7 +724,7 @@ a.logo-instagram::before {
 }
 
 .button-filter:active {
-  color: rgba(255,255,255,0.3);
+  color: var(--basic-special-white);
 }
 
 .button-templates {
