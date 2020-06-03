@@ -529,8 +529,8 @@ a.logo-instagram::before {
   opacity: 0.3;
 }
 
-.catalog-filter-link.checked {
-  background-color: var(basic-black);
+.catalog-filter-link .checked {
+  color: var(--basic-black);
 }
 
 
@@ -540,7 +540,7 @@ a.logo-instagram::before {
 }
 
 .catalog-filte-link:active {
-  background-color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 
