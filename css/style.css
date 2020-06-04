@@ -39,6 +39,45 @@ body {
 
 }
 
+/* visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* container */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  outline: 5px solid blue;
+  outline-offset: -5px;
+}
+
+/* buttons */
+
+.button {
+  text-align: center;
+  color: var(--basic-white);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -63,20 +102,16 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-items: start;
+  box-shadow:0 545px 0 0 var(--basic-grey) inset;
 }
 
 /* Main navigation */
 
 .main-header {
-  margin-bottom: 70px;
+
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
   background-color: var(--basic-grey)
-}
-
-.main-nav-wrapper {
-  outline: 5px solid red;
-  outline-offset: -5px;
 }
 
 /* Logo */
@@ -88,32 +123,37 @@ img {
   outline-offset: -5px;
 }
 
-/* container */
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.container-navigation {
-  outline: 5px solid blue;
-  outline-offset: -5px;
-}
-
-
 .main-nav {
+  margin-top: 49px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
+
 }
 
+.main-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: tomato;
+}
 
 .site-navigation-list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
+}
+
+.site-navigation-item {
+  margin-right: 44px;
+}
+
+.site-navigation-item:last-child {
+  margin-right: 0;
 }
 
 .site-navigation-list a {
@@ -149,6 +189,16 @@ img {
 
 .slider-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-list-item {
+  display: none;
+}
+
+.slider-list-item:nth-child(1) {
+  display: block;
 }
 
 
@@ -186,42 +236,110 @@ img {
   background-color: var(--basic-grey);
 }
 
-/* visually-hidden */
+.button-slider {
+  min-width: 240px;
+  box-sizing: border-box;
+  padding-left: 54px;
+  padding-right: 54px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.button-slider:hover,
+.button-slider:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-slider:active {
+  background-color: var(--basic-active-red);
+}
+
+.button-slider:active {
+  color: rgba(255,255,255,0.3);
 }
 
 /* products */
 
 .products-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 160px;
+}
+
+.products-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+
+  max-width: 300px;
+
+  text-align: start;
+}
+
+
+.products-list-item h3 {
+order: 2;
+}
+
+.products-list-item img {
+order: 1;
 }
 
 .products-list-item p {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--special);
+  order: 3;
 }
 
-.products-list-item {
-  text-align: center;
-}
 
 .products-list-item h3 {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 15px;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.button-products {
+  order: 4;
+  width: 160px;
+}
+
+.button-products {
+
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 39px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.button-products:hover,
+.button-products:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-products:active {
+  background-color: var(--basic-active-red);
+}
+
+.button-products:active {
+  color: var(--basic-special-white);
+}
+
+.button-products:nth-child(2) {
+  background-color: var(--basic-green);
 }
 
 /* Promo  */
@@ -288,107 +406,28 @@ img {
   display: none;
 }
 
-/* buttons */
+/* main-footer */
 
-.button {
-  text-align: center;
-  color: var(--basic-white);
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-transform: uppercase;
-  background-color: var(--basic-red);
-  border: none;
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.contacts h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts-number {
+  color: var(--basic-exclusive-dark);
+}
+
+.contacts address {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
-}
-
-.button-slider {
-  min-width: 240px;
-  box-sizing: border-box;
-  padding-left: 54px;
-  padding-right: 54px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-}
-
-.button-slider:hover,
-.button-slider:focus {
-  background-color: var(--basic-dark-red);
-}
-
-.button-slider:active {
-  background-color: var(--basic-active-red);
-}
-
-.button-slider:active {
-  color: rgba(255,255,255,0.3);
-}
-
-.button-products {
-  min-width: 160px;
-  box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 39px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-}
-
-.button-products:hover,
-.button-products:focus {
-  background-color: var(--basic-dark-red);
-}
-
-.button-products:active {
-  background-color: var(--basic-active-red);
-}
-
-.button-products:active {
-  color: var(--basic-special-white);
-}
-
-.button-products-green {
-  background-color: var(--basic-green);
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 39px;
-  padding-right: 40px;
-}
-
-.button-products-green:hover,
-.button-products-green:focus {
-  background-color: var(--basic-dark-green);
-}
-
-.button-products-green:active {
-  background-color: var(--basic-active-green);
-}
-
-.button-products-green:active {
-  color: var(--basic-special-white);
-}
-
-.button-products-yellow {
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 39px;
-  padding-right: 40px;
-  background-color: var(--basic-yellow);
-}
-
-.button-products-yellow:hover,
-.button-products-yellow:focus {
-  background-color: var(--basic-dark-yellow);
-}
-
-.button-products-yellow:active {
-  background-color: var(--basic-active-yellow);
-}
-
-.button-products-yellow:active {
-  color: var(--basic-special-white);
+  font-style: normal;
+  color: var(--basic-exclusive-dark);
 }
 
 .button-contacts {
@@ -414,29 +453,6 @@ img {
   color: var(--basic-special-white);
 }
 
-/* main-footer */
-
-.main-footer {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-}
-
-.contacts h3{
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-.contacts-number {
-  color: var(--basic-exclusive-dark);
-}
-
-.contacts address {
-  font-size: 16px;
-  line-height: 18px;
-  font-style: normal;
-  color: var(--basic-exclusive-dark);
-}
 
 .social {
   text-align: center;
@@ -595,6 +611,32 @@ a.logo-instagram::before {
   color: var(--basic-black);
 }
 
+.button-filter {
+  min-width: 260px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 88px;
+  padding-right: 89px;
+  background-color: var(--basic-grey);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black);
+  box-sizing: border-box;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--basic-dark-grey);
+}
+
+.button-filter:active {
+  background-color: var(--basic-active-grey);
+}
+
+.button-filter:active {
+  color: var(--basic-special-white);
+}
 
 /* Templates */
 
@@ -633,6 +675,27 @@ a.logo-instagram::before {
   font-weight: 400;
   color: var(--basic-exclusive-dark);
 }
+
+.button-templates {
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
+  box-sizing: border-box;
+}
+
+.button-templates:hover,
+.button-templates:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button-templates:active {
+  background-color: var(-basic-active-red);
+}
+
 
 /* Pagination */
 
@@ -694,55 +757,4 @@ a.logo-instagram::before {
 
 .pagination-button-next:active {
   background-color: var(--basic-active-grey);
-}
-
-
-
-/* buttons */
-
-.button-filter {
-  min-width: 260px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 88px;
-  padding-right: 89px;
-  background-color: var(--basic-grey);
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: var(--basic-black);
-  box-sizing: border-box;
-}
-
-.button-filter:hover,
-.button-filter:focus {
-  background-color: var(--basic-dark-grey);
-}
-
-.button-filter:active {
-  background-color: var(--basic-active-grey);
-}
-
-.button-filter:active {
-  color: var(--basic-special-white);
-}
-
-.button-templates {
-  display: inline-block;
-  min-width: 200px;
-  height: 50px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 72px;
-  padding-right: 72px;
-  box-sizing: border-box;
-}
-
-.button-templates:hover,
-.button-templates:focus {
-  background-color: var(--basic-dark-red);
-}
-
-.button-templates:active {
-  background-color: var(-basic-active-red);
 }

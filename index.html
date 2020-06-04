@@ -8,13 +8,16 @@
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body class="page-body">
-    <div class="main-nav-wrapper">
+
       <header class="main-header">
+
          <nav class="main-nav">
+
+          <div class="container">
+              <div class="main-nav-wrapper">
             <a class="main-header-logo">
             <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
             </a>
-          <div class="container-navigation">
             <ul class="site-navigation-list">
                <li class="site-navigation-item">
                   <a href="#">Студия</a>
@@ -30,9 +33,11 @@
                </li>
             </ul>
 
-            <div class="basket-nav"><a href="#">Корзина</a></div>
+            <div class="basket-nav">
+              <a href="#">Корзина</a>
+            </div>
           </div>
-        </div>
+          </div>
         </nav>
       </header>
 
@@ -84,13 +89,13 @@
                     <h3>Приложения</h3>
                      <img src="img/illustration-2.png" width="300" height="146" alt="Иллюстрация с мобильным приложением">
                      <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                     <a class="button button-products-green" href="#">Заказать</a>
+                     <a class="button button-products" href="#">Заказать</a>
                </li>
                <li class="products-list-item">
                     <h3>Презентации</h3>
                      <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
                      <p>Вы даже не подозреваете,насколько вы изумительны!</p>
-                     <a class="button button-products-yellow" href="#">Заказать</a>
+                     <a class="button button-products" href="#">Заказать</a>
                </li>
             </ul>
          </section>
@@ -153,30 +158,6 @@
          </section>
       </main>
 
-      <section class="modal">
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="name-surename">Ваше имя:</label>
-            <input id="name-surename"  type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-
-          <p>
-            <label for="input-mail">Ваш e-mail</label>
-            <input id="input-mail" type="email" name="email" placeholder="email@example.com">
-          </p>
-
-          <p>
-            <label for="comments-field">
-              Текст письма:
-            </label>
-            <textarea name="text" id="comments-field" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-         </p>
-
-          <button class="button" type="submit">Отправить</button>
-          <button class="button" type="button" aria-label="Закрыть форму"></button>
-        </form>
-      </section>
 
       <footer class="main-footer">
 
@@ -216,5 +197,29 @@
             </div>
          </section>
       </footer>
+      <section class="modal">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="name-surename">Ваше имя:</label>
+            <input id="name-surename"  type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+
+          <p>
+            <label for="input-mail">Ваш e-mail</label>
+            <input id="input-mail" type="email" name="email" placeholder="email@example.com">
+          </p>
+
+          <p>
+            <label for="comments-field">
+              Текст письма:
+            </label>
+            <textarea name="text" id="comments-field" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+         </p>
+
+          <button class="button" type="submit">Отправить</button>
+          <button class="button" type="button" aria-label="Закрыть форму"></button>
+        </form>
+      </section>
    </body>
 </html>
