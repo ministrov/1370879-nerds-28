@@ -8,94 +8,95 @@
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body class="catalog-page">
-
       <header class="main-header">
          <nav class="main-nav">
-            <a class="logo" href="index.html">
-            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
-            </a>
-            <ul class="site-navigation-list">
-               <li class="site-navigation-item">
-                  <a href="#">Студия</a>
-               </li>
-               <li class="site-navigation-item">
-                  <a href="#">Клиенты</a>
-               </li>
-               <li class="site-navigation-item">
-                  <a class="is-active" href="#">Магазин</a>
-               </li>
-               <li class="site-navigation-item">
-                  <a href="#">Контакты</a>
-               </li>
-            </ul>
-            <div class="basket-nav"><a href="#">Корзина</a></div>
+            <div class="container">
+               <div class="main-nav-wrapper">
+                  <a class="main-header-logo">
+                  <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
+                  </a>
+                  <ul class="site-navigation-list">
+                     <li class="site-navigation-item">
+                        <a href="#">Студия</a>
+                     </li>
+                     <li class="site-navigation-item">
+                        <a href="#">Клиенты</a>
+                     </li>
+                     <li class="site-navigation-item">
+                        <a href="catalog.html">Магазин</a>
+                     </li>
+                     <li class="site-navigation-item">
+                        <a href="#">Контакты</a>
+                     </li>
+                  </ul>
+                  <div class="basket-nav">
+                     <a href="#">Корзина</a>
+                  </div>
+               </div>
+            </div>
          </nav>
       </header>
 
       <main>
          <h1>Магазин готовых шаблонов</h1>
-
          <div class="filter">
             <h2>Стоимость:</h2>
-
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <p>
-              <input type="range" min="0" max="15000" step="1">
-            </p>
-            <p>
-              <input type="text" name="min-price" id="from-number" value="0">
-              <label for="from-number">от</label>
-            </p>
-            <p>
-              <input type="text" name="max-price" id="to-number" value="15000">
-              <label for="to-number">до</label>
-            </p>
-
-            <fieldset>
-              <legend class="header-text">Сетка:</legend>
-              <ul>
-                <li>
-                  <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
-                </li>
-                <li>
-                  <input type="radio" name="grid" value="fixed" id="filter-fixed">
-                  <label for="filter-fixed">Фиксированная</label>
-                </li>
-                <li>
-                  <input type="radio" name="grid" value="flexible" id="filter-flexible">
-                  <label for="filter-flexible">Резиновая</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="header-text">Особенности:</legend>
-              <ul>
-                <li>
-                  <input type="checkbox" name="slider" id="filter-slider" checked>
-                  <label for="filter-slider">Слайдер</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
-                  <label for="filter-block-of-advantages">Блок преимуществ</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="news" id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="gallery" id="filter-gallery" checked>
-                  <label for="filter-gallery">Галерея</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="basket" id="filter-basket" checked>
-                  <label for="filter-basket">Корзина</label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <button class="button button-filter" type="button">Показать</button>
-          </form>
+            <form action="https://echo.htmlacademy.ru" method="get">
+               <p>
+                  <input type="range" min="0" max="15000" step="1">
+               </p>
+               <p>
+                  <input type="text" name="min-price" id="from-number" value="0">
+                  <label for="from-number">от</label>
+               </p>
+               <p>
+                  <input type="text" name="max-price" id="to-number" value="15000">
+                  <label for="to-number">до</label>
+               </p>
+               <fieldset>
+                  <legend class="header-text">Сетка:</legend>
+                  <ul>
+                     <li>
+                        <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                        <label for="filter-adaptive">Адаптивная</label>
+                     </li>
+                     <li>
+                        <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                        <label for="filter-fixed">Фиксированная</label>
+                     </li>
+                     <li>
+                        <input type="radio" name="grid" value="flexible" id="filter-flexible">
+                        <label for="filter-flexible">Резиновая</label>
+                     </li>
+                  </ul>
+               </fieldset>
+               <fieldset>
+                  <legend class="header-text">Особенности:</legend>
+                  <ul>
+                     <li>
+                        <input type="checkbox" name="slider" id="filter-slider" checked>
+                        <label for="filter-slider">Слайдер</label>
+                     </li>
+                     <li>
+                        <input type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
+                        <label for="filter-block-of-advantages">Блок преимуществ</label>
+                     </li>
+                     <li>
+                        <input type="checkbox" name="news" id="filter-news" checked>
+                        <label for="filter-news">Новости</label>
+                     </li>
+                     <li>
+                        <input type="checkbox" name="gallery" id="filter-gallery" checked>
+                        <label for="filter-gallery">Галерея</label>
+                     </li>
+                     <li>
+                        <input type="checkbox" name="basket" id="filter-basket" checked>
+                        <label for="filter-basket">Корзина</label>
+                     </li>
+                  </ul>
+               </fieldset>
+               <button class="button button-filter" type="button">Показать</button>
+            </form>
          </div>
 
          <div class="catalog">
@@ -168,28 +169,23 @@
       </main>
 
       <section class="modal">
-
-        <h2>Напишите нам</h2>
-
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="name-surname">Ваше имя:</label>
-            <input id="name-surname" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-
-          <p>
-            <label for="input-mail">Ваш e-mail</label>
-            <input id="input-mail" type="email" name="email" placeholder="email@example.com">
-          </p>
-
-          <p>
-            <label for="comments-field">Текст письма:</label>
-            <textarea name="text" id="comments-field" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-          </p>
-
-          <button class="button" type="submit">Отправить</button>
-          <button class="button" type="button" aria-label="Закрыть форму"></button>
-        </form>
+         <h2>Напишите нам</h2>
+         <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+               <label for="name-surname">Ваше имя:</label>
+               <input id="name-surname" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+               <label for="input-mail">Ваш e-mail</label>
+               <input id="input-mail" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+               <label for="comments-field">Текст письма:</label>
+               <textarea name="text" id="comments-field" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+            <button class="button" type="button" aria-label="Закрыть форму"></button>
+         </form>
       </section>
 
       <footer class="main-footer">
@@ -200,29 +196,28 @@
                191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
             </address>
             <a class="contacts-number" href="tel:7(812)275-75-75">7(812)275-75-75</a>
-            <a class="button button-contacts" type="button">Напишите нам</a>
+            <a class="button button-contacts" href="#">Напишите нам</a>
          </section>
 
          <section class="social">
-           <h3 class="visually-hidden">Социальные сети</h3>
-           <ul class="social-list">
-              <li class="social-item">
-                 <a href="" class="logo-vk">
-                   <span class="visually-hidden">Нёрдс во Вконтакте</span>
-                 </a>
-              </li>
-              <li class="social-item">
-                 <a href="" class="logo-facebook">
-                   <span class="visually-hidden">Нёрдс в Фэйсбуке</span>
-                 </a>
-              </li>
-              <li class="social-item">
-                 <a href="" class="logo-instagram">
-                   <span class="visually-hidden">Нёрдс в Инстаграме</span>
-                 </a>
-              </li>
-           </ul>
-
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="social-list">
+               <li class="social-item">
+                  <a href="" class="logo-vk">
+                  <span class="visually-hidden">Нёрдс во Вконтакте</span>
+                  </a>
+               </li>
+               <li class="social-item">
+                  <a href="" class="logo-facebook">
+                  <span class="visually-hidden">Нёрдс в Фэйсбуке</span>
+                  </a>
+               </li>
+               <li class="social-item">
+                  <a href="" class="logo-instagram">
+                  <span class="visually-hidden">Нёрдс в Инстаграме</span>
+                  </a>
+               </li>
+            </ul>
             <div class="discount-text">
                <b>Давайте дружить, это выгодно!</b>
                <p>Скидка 10% для друзей из социальных сетей</p>
