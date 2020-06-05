@@ -273,9 +273,7 @@ img {
   flex-direction: column;
   justify-content: end;
   align-items: end;
-
   max-width: 300px;
-
   text-align: start;
 }
 
@@ -454,10 +452,12 @@ order: 1;
 .social-list {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
-.
+.social-item {
+  margin-right: 10px;
+}
 
 .main-footer {
   color: var(--basic-black);
@@ -605,6 +605,15 @@ a.logo-instagram::before {
   text-align: center;
 }
 
+.catalog-wrapper {
+  display:flex;
+  justify-content: space-around;
+}
+
+.catalog-navigation {
+  display: flex;
+}
+
 /* main-nav */
 
 .site-navigation-list a.is-active {
@@ -692,7 +701,16 @@ a.logo-instagram::before {
 /* Templates */
 
 .templates-cards {
-  text-align: center;
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+.templates-card-list {
+  outline: 5px solid yellow;
+  outline-offset: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .templates-cards ul {

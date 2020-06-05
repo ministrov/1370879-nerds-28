@@ -39,9 +39,11 @@
 
       <main>
          <h1>Магазин готовых шаблонов</h1>
-         <div class="filter">
-            <h2>Стоимость:</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
+        <div class="container catalog-wrapper">
+          <div class="filter-wrapper">
+            <div class="filter">
+              <h2>Стоимость:</h2>
+              <form action="https://echo.htmlacademy.ru" method="get">
                <p>
                   <input type="range" min="0" max="15000" step="1">
                </p>
@@ -97,11 +99,12 @@
                </fieldset>
                <button class="button button-filter" type="button">Показать</button>
             </form>
-         </div>
-
-         <div class="catalog">
-            <div class="catalog-navigation">
-               <h2>Сортировать:</h2>
+            </div>
+          </div>
+          <div class="catalog-layout">
+            <div class="catalog">
+              <div class="catalog-navigation">
+                  <h2>Сортировать:</h2>
                <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                      <a class="catalog-filter-link checked" href="">По цене</a>
@@ -117,10 +120,9 @@
                   <a href="" class="arrow-down" aria-label="Сортировка по убыванию"></a>
                   <a href="" class="arrow-up" aria-label="Сортировка по возрастанию"></a>
                </div>
-            </div>
+             </div>
          </div>
-
-         <div class="templates-cards">
+            <div class="templates-cards">
             <ul class="templates-card-list">
                <li class="templates-card-item">
                   <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Седона">
@@ -160,12 +162,14 @@
                </li>
             </ul>
          </div>
-         <div class="pagination">
-            <a class="pagination-button-active" href="">1</a>
-            <a class="pagination-button" href="">2</a>
-            <a class="pagination-button" href="">3</a>
-            <a class="pagination-button-next" href="">Следующая</a>
-         </div>
+            <div class="pagination">
+              <a class="pagination-button-active" href="">1</a>
+              <a class="pagination-button" href="">2</a>
+              <a class="pagination-button" href="">3</a>
+              <a class="pagination-button-next" href="">Следующая</a>
+            </div>
+          </div>
+       </div>
       </main>
 
       <section class="modal">
