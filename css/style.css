@@ -357,6 +357,14 @@ order: -1;
 
 /* Promo  */
 
+.promo-wrapper {
+  display: flex;
+}
+
+.promo-statistics-list {
+  display: flex;
+}
+
 .promo-text h3 {
   font-size: 45px;
   line-height: 45px;
@@ -409,8 +417,9 @@ order: -1;
 /* partners */
 
 .partners-list {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-  text-align: center;
 }
 
 /* hidden form*/
@@ -420,6 +429,13 @@ order: -1;
 }
 
 /* main-footer */
+
+.main-footer {
+  background-image: url("../img/map-1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
 .footer-wrapper {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
@@ -434,6 +450,17 @@ order: -1;
 .footer-wrapper {
   padding-top: 68px;
   padding-bottom: 76px;
+}
+
+.contacts-address {
+  width: 320px;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 50px;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: var(--basic-white);
 }
 
 .social {
@@ -604,6 +631,11 @@ a.logo-instagram::before {
 
 .catalog-navigation {
   display: flex;
+}
+
+.catalog-filter-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* main-nav */
