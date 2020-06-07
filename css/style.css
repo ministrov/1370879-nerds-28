@@ -271,19 +271,11 @@ img {
 .products-list-item {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: end;
   max-width: 300px;
-  text-align: start;
-}
-
-
-.products-list-item h3 {
-order: 2;
 }
 
 .products-list-item img {
-order: 1;
+order: -1;
 }
 
 .products-list-item p {
@@ -293,7 +285,6 @@ order: 1;
   line-height: 24px;
   font-weight: 400;
   color: var(--special);
-  order: 3;
 }
 
 
@@ -434,7 +425,7 @@ order: 1;
   outline-offset: -5px;
 }
 
-.container .footer-wrapper {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -606,6 +597,7 @@ a.logo-instagram::before {
 }
 
 .catalog-wrapper {
+
   display:flex;
   justify-content: space-around;
 }
@@ -629,6 +621,10 @@ a.logo-instagram::before {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.filter {
+  width: 270px;
 }
 
 .header-text {
@@ -711,6 +707,7 @@ a.logo-instagram::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0;
 }
 
 .templates-cards ul {
@@ -719,6 +716,7 @@ a.logo-instagram::before {
 
 .templates-card-item {
   margin-bottom: 20px;
+  width: 360px;
 }
 
 .templates-card-item h3 a {
