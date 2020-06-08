@@ -8,6 +8,7 @@
   --basic-grey: #EEEEEE;
   --basic-dark-grey: #DFDFDF;
   --basic-active-grey: #D5D5D5;
+  --basic-filter-grey: #D7DCDF;
   --basic-light-grey: #E1E1E1;
   --basic-red: #FB565A;
   --basic-dark-red: #E74246;
@@ -641,7 +642,7 @@ a.logo-instagram::before {
 
 /* filter*/
 
-.filter h2 {
+.filter-form h2 {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -651,6 +652,93 @@ a.logo-instagram::before {
 .filter {
   width: 270px;
 }
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--basic-grey);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-filter-grey);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--special);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--basic-grey);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
 
 .header-text {
   font-size: 18px;
