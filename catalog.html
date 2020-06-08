@@ -7,12 +7,13 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
+
    <body class="catalog-page">
       <header class="main-header">
          <nav class="main-nav">
             <div class="container">
                <div class="main-nav-wrapper">
-                  <a class="main-header-logo">
+                  <a class="main-header-logo" href="index.html">
                   <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
                   </a>
                   <ul class="site-navigation-list">
@@ -39,9 +40,9 @@
 
       <main>
          <h1>Магазин готовых шаблонов</h1>
-        <div class="container catalog-wrapper">
-              <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                <h2>Стоимость:</h2>
+         <div class="container catalog-wrapper">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+               <h2>Стоимость:</h2>
                <p>
                   <input type="range" min="0" max="15000" step="1">
                </p>
@@ -98,75 +99,76 @@
                <button class="button button-filter" type="button">Показать</button>
             </form>
 
-          <div class="catalog-layout">
-            <div class="catalog">
-              <div class="catalog-navigation">
-                  <h2>Сортировать:</h2>
-               <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                     <a class="catalog-filter-link checked" href="">По цене</a>
-                  </li>
-                  <li class="catalog-filter-item">
-                     <a class="catalog-filter-link" href="">По типу</a>
-                  </li>
-                  <li class="catalog-filter-item">
-                     <a class="catalog-filter-link" href="">По названию</a>
-                  </li>
-               </ul>
-               <div class="catalog-filter-arrows">
-                  <a href="" class="arrow-down" aria-label="Сортировка по убыванию"></a>
-                  <a href="" class="arrow-up" aria-label="Сортировка по возрастанию"></a>
+            <div class="catalog-layout">
+               <div class="catalog">
+                  <div class="catalog-navigation">
+                     <h2>Сортировать:</h2>
+                     <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                           <a class="catalog-filter-link checked" href="">По цене</a>
+                        </li>
+                        <li class="catalog-filter-item">
+                           <a class="catalog-filter-link" href="">По типу</a>
+                        </li>
+                        <li class="catalog-filter-item">
+                           <a class="catalog-filter-link" href="">По названию</a>
+                        </li>
+                     </ul>
+                     <div class="catalog-filter-arrows">
+                        <a href="" class="arrow-down" aria-label="Сортировка по убыванию"></a>
+                        <a href="" class="arrow-up" aria-label="Сортировка по возрастанию"></a>
+                     </div>
+                  </div>
                </div>
-             </div>
-         </div>
-            <div class="templates-cards">
-            <ul class="templates-card-list">
-               <li class="templates-card-item">
-                  <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Седона">
-                  <h3><a href="">Sedona</a></h3>
-                  <p>Информационный сайт для туристов</p>
-                  <a class="button button-templates" href="">9 900 ₽</a>
-               </li>
-               <li class="templates-card-item">
-                  <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Пинл апп">
-                  <h3><a href="">Pink App</a></h3>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
-                  <a class="button button-templates" href="">9 900 ₽</a>
-               </li>
-               <li class="templates-card-item">
-                  <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Барбершоп">
-                  <h3><a href="">Barbershop</a></h3>
-                  <p>Сайт салона красоты.Для мужчин, да.</p>
-                  <a class="button button-templates" href="">9 900 ₽</a>
-               </li>
-               <li class="templates-card-item">
-                  <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Мишка">
-                  <h3><a href="">MISHKA</a></h3>
-                  <p>Интернет-магазин вязаных игрушек</p>
-                  <a class="button button-templates" href="">9 900 ₽</a>
-               </li>
-               <li class="templates-card-item">
-                  <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта Аплюс">
-                  <h3><a href="">A Plus</a></h3>
-                  <p>Лендинг курсов повышения квалификации</p>
-                  <a class="button button-templates">9 900 ₽</a>
-               </li>
-               <li class="templates-card-item">
-                  <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
-                  <h3><a href="">КВАСТ</a></h3>
-                  <p>Промо-сайт производителя крафтового кваса</p>
-                  <a class="button button-templates" href="">9 900 ₽</a>
-               </li>
-            </ul>
-         </div>
-            <div class="pagination">
-              <a class="pagination-button-active" href="">1</a>
-              <a class="pagination-button" href="">2</a>
-              <a class="pagination-button" href="">3</a>
-              <a class="pagination-button-next" href="">Следующая</a>
+
+               <div class="templates-cards">
+                  <ul class="templates-card-list">
+                     <li class="templates-card-item">
+                        <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Седона">
+                        <h3><a href="">Sedona</a></h3>
+                        <p>Информационный сайт для туристов</p>
+                        <a class="button button-templates" href="">9 900 ₽</a>
+                     </li>
+                     <li class="templates-card-item">
+                        <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Пинл апп">
+                        <h3><a href="">Pink App</a></h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a class="button button-templates" href="">9 900 ₽</a>
+                     </li>
+                     <li class="templates-card-item">
+                        <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Барбершоп">
+                        <h3><a href="">Barbershop</a></h3>
+                        <p>Сайт салона красоты.Для мужчин, да.</p>
+                        <a class="button button-templates" href="">9 900 ₽</a>
+                     </li>
+                     <li class="templates-card-item">
+                        <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Мишка">
+                        <h3><a href="">MISHKA</a></h3>
+                        <p>Интернет-магазин вязаных игрушек</p>
+                        <a class="button button-templates" href="">9 900 ₽</a>
+                     </li>
+                     <li class="templates-card-item">
+                        <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта Аплюс">
+                        <h3><a href="">A Plus</a></h3>
+                        <p>Лендинг курсов повышения квалификации</p>
+                        <a class="button button-templates">9 900 ₽</a>
+                     </li>
+                     <li class="templates-card-item">
+                        <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
+                        <h3><a href="">КВАСТ</a></h3>
+                        <p>Промо-сайт производителя крафтового кваса</p>
+                        <a class="button button-templates" href="">9 900 ₽</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="pagination">
+                  <a class="pagination-button-active" href="">1</a>
+                  <a class="pagination-button" href="">2</a>
+                  <a class="pagination-button" href="">3</a>
+                  <a class="pagination-button-next" href="">Следующая</a>
+               </div>
             </div>
-          </div>
-       </div>
+         </div>
       </main>
 
       <section class="modal">
@@ -191,42 +193,42 @@
 
       <footer class="main-footer">
          <section class="contacts">
-          <div class="contacts-address">
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <address>
-               191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
-            </address>
-            <a class="contacts-number" href="tel:7(812)275-75-75">7(812)275-75-75</a>
-            <a class="button button-contacts" href="#">Напишите нам</a>
-          </div>
+           <img src="img/map-1.png" width="1440" height="416" alt="Подробная карта, как добраться до студии Нёрдс">
+            <div class="contacts-address">
+               <h3>NЁRDS DESIGN STUDIO</h3>
+               <address>
+                  191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
+               </address>
+               <a class="contacts-number" href="tel:7(812)275-75-75">7(812)275-75-75</a>
+               <a class="button button-contacts" href="#">Напишите нам</a>
+            </div>
          </section>
 
          <section class="social">
             <h3 class="visually-hidden">Социальные сети</h3>
-          <div class="container footer-wrapper">
-              <ul class="social-list">
-               <li class="social-item">
-                  <a href="" class="logo-vk">
-                  <span class="visually-hidden">Нёрдс во Вконтакте</span>
-                  </a>
-               </li>
-               <li class="social-item">
-                  <a href="" class="logo-facebook">
-                  <span class="visually-hidden">Нёрдс в Фэйсбуке</span>
-                  </a>
-               </li>
-               <li class="social-item">
-                  <a href="" class="logo-instagram">
-                  <span class="visually-hidden">Нёрдс в Инстаграме</span>
-                  </a>
-               </li>
-            </ul>
-
-              <div class="discount-text">
-                <b>Давайте дружить, это выгодно!</b>
-                <p>Скидка 10% для друзей из социальных сетей</p>
-              </div>
-          </div>
+            <div class="container footer-wrapper">
+               <ul class="social-list">
+                  <li class="social-item">
+                     <a href="" class="logo-vk">
+                     <span class="visually-hidden">Нёрдс во Вконтакте</span>
+                     </a>
+                  </li>
+                  <li class="social-item">
+                     <a href="" class="logo-facebook">
+                     <span class="visually-hidden">Нёрдс в Фэйсбуке</span>
+                     </a>
+                  </li>
+                  <li class="social-item">
+                     <a href="" class="logo-instagram">
+                     <span class="visually-hidden">Нёрдс в Инстаграме</span>
+                     </a>
+                  </li>
+               </ul>
+               <div class="discount-text">
+                  <b>Давайте дружить, это выгодно!</b>
+                  <p>Скидка 10% для друзей из социальных сетей</p>
+               </div>
+            </div>
          </section>
       </footer>
    </body>
