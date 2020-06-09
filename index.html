@@ -199,21 +199,21 @@
          <h2>Напишите нам</h2>
          <form action="https://echo.htmlacademy.ru" method="post">
             <p class="input-wrapper">
-               <label for="name-surename">Ваше имя:</label>
-               <input id="name-surename"  type="text" name="name" placeholder="Имя Фамилия">
+               <label class="form-label" for="name-surename">Ваше имя:</label>
+               <input class="form-input" id="name-surename"  type="text" name="name" placeholder="Имя Фамилия">
 
 
-               <label for="input-mail">Ваш e-mail</label>
-               <input id="input-mail" type="email" name="email" placeholder="email@example.com">
+               <label class="form-label" for="input-mail">Ваш e-mail</label>
+               <input class="form-input" id="input-mail" type="email" name="email" placeholder="email@example.com">
             </p>
             <p>
-               <label for="comments-field">
+               <label class="form-label" for="comments-field">
                Текст письма:
                </label>
-               <textarea name="text" id="comments-field" rows="6" cols="70" placeholder="В свободной форме"></textarea>
+               <textarea class="form-textarea" name="text" id="comments-field" rows="6" cols="70" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button button-modal" type="submit">Отправить</button>
-            <button class="close-form" type="button" aria-label="Закрыть форму"></button>
+            <button class="close-form" type="button" aria-label="Закрыть форму" tabindex="0"></button>
          </form>
       </section>
    </body>

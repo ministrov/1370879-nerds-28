@@ -11,6 +11,7 @@
   --basic-filter-grey: #D7DCDF;
   --basic-popup-grey: #D7DCDE;
   --basic-light-grey: #E1E1E1;
+  --basic-input-hover-grey: #b4b9bb;
   --basic-red: #FB565A;
   --basic-dark-red: #E74246;
   --basic-active-red: #D7373B;
@@ -446,7 +447,7 @@ order: -1;
 
 .modal {
   width: 700px;
-  height: 450px;
+  height: 600px;
   position: fixed;
   top: 0;
   right: 0;
@@ -455,16 +456,57 @@ order: -1;
   margin: auto;
   background-color: var(--basic-white);
   padding: 50px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal label {
+.modal .form-label {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.modal .form-input {
+  width: 360px;
+  margin-bottom: 40px;
+  padding: 15px 10px;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: normal;
+  color: var(--basic-light-black);
+  background-color: transparent;
+  border: 2px solid var(--basic-popup-grey);
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline:none;
 }
 
-.modal input {
-  padding: 10px;
+.modal .form-input:hover {
+  border-color: var(--basic-input-hover-grey);
+}
+
+.modal .form-input:focus {
+  border-color: var(--basic-black);
+}
+
+.modal .form-input:invalid {
+  border-color: var(--basic-dark-red);
+}
+
+.form-textarea {
+  font: inherit;
+  color: var(--basic-light-black);
+  border-radius: 5px;
+  border: 2px solid #d7dcde;
+}
+
+.modal .form-textarea:focus {
+  border-color: var(--basic-black);
+}
+
+.modal .form-textarea:hover {
+  border-color: var(--basic-input-hover-grey);
 }
 
 .input-wrapper {
@@ -483,7 +525,7 @@ order: -1;
 
 .modal .close-form {
   position: relative;
-  bottom:320px;
+  bottom:390px;
   right: -340px;
   width: 25px;
   height: 25px;
@@ -501,6 +543,7 @@ order: -1;
   width: 20px;
   height: 3px;
   background-color: var(--basic-red);
+  opacity: 0.3;
 }
 
 .close-form::before {
