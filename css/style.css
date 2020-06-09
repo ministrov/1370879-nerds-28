@@ -178,6 +178,7 @@ img {
   height: 16px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 /* User navigation */
@@ -453,13 +454,21 @@ order: -1;
   left: 0;
   margin: auto;
   background-color: var(--basic-white);
-  padding: 40px;
+  padding: 50px;
 }
 
 .modal label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.modal input {
+  padding: 10px;
+}
+
+.input-wrapper {
+  display: flex;
 }
 
 .button-modal {
@@ -472,6 +481,35 @@ order: -1;
   font-weight: 500;
 }
 
+.modal .close-form {
+  position: relative;
+  bottom:320px;
+  right: -340px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: var(--basic-white);
+  border: none;
+}
+
+.close-form::before,
+.close-form::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: var(--basic-red);
+}
+
+.close-form::before {
+  transform: rotate(45deg);
+}
+
+.close-form::after {
+  transform: rotate(-45deg);
+}
 
 /* main-footer */
 
@@ -694,6 +732,11 @@ a.logo-instagram::before {
   text-transform: uppercase;
 }
 
+.filter-form {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+
 .filter {
   width: 270px;
 }
@@ -782,7 +825,6 @@ a.logo-instagram::before {
   font-family: inherit;
   font-size: inherit;
 }
-
 
 
 .header-text {
