@@ -378,6 +378,10 @@ order: -1;
 
 /* Promo  */
 
+.promo {
+  margin-bottom: 122px;
+}
+
 .promo-wrapper {
   display: flex;
 }
@@ -415,6 +419,12 @@ order: -1;
   list-style: none;
 }
 
+.promo-statistics {
+  padding-top: 124px;
+  background-image: url("../img/nerds-illustration.png");
+  background-repeat: no-repeat;
+}
+
 .promo-statistics span {
   font-size: 16px;
   line-height: 24px;
@@ -437,6 +447,10 @@ order: -1;
 
 /* partners */
 
+.partners {
+  margin-bottom: 80px;
+}
+
 .partners-list {
   display: flex;
   justify-content: space-around;
@@ -446,6 +460,7 @@ order: -1;
 /* hidden form*/
 
 .modal {
+  display: none;
   width: 700px;
   height: 600px;
   position: fixed;
@@ -557,23 +572,23 @@ order: -1;
 /* main-footer */
 
 .footer-wrapper {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
-
-.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 68px;
+  margin-bottom: 68px;
 }
 
-.footer-wrapper {
-  padding-top: 68px;
-  padding-bottom: 76px;
+.contacts {
+  position: relative;
 }
 
 .contacts-address {
-  width: 320px;
+  position: absolute;
+  top: 0;
+  left: 125px;
+  width: 319px;
+  height: 308px;
   margin: 0;
   margin-top: 50px;
   margin-left: 50px;
@@ -583,18 +598,21 @@ order: -1;
   background-color: var(--basic-white);
 }
 
-.social {
-  min-height: 318px
-}
-
 .social-list {
   display: flex;
   padding: 0;
-  margin: 10px;
 }
 
 .social-item {
   margin-right: 10px;
+}
+
+.discount-text {
+  line-height: 10px;
+}
+
+.discount-text p {
+  text-align: left;
 }
 
 .main-footer {
@@ -773,15 +791,6 @@ a.logo-instagram::before {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.filter-form {
-  padding-top: 53px;
-  padding-bottom: 53px;
-}
-
-.filter {
-  width: 270px;
 }
 
 .filter-item {
