@@ -102,7 +102,7 @@ img {
 }
 
 .page-body {
-  min-height: 100%;
+
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-items: start;
@@ -503,7 +503,6 @@ order: -1;
 }
 
 
-
 .promo-statistics-item p:first-child {
   display: inline-block;
   margin: 0;
@@ -877,11 +876,8 @@ a.logo-instagram::before {
 
 /* filter*/
 
-.filter-form h2 {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+.filter-form {
+  background-color: yellow;
 }
 
 .filter-item {
@@ -890,16 +886,16 @@ a.logo-instagram::before {
   border: none;
 }
 
-.range-filter {
-  width: 260px;
-  margin-top: 49px;
-}
-
 .filter-item legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
 }
 
 .range-controls {
@@ -957,7 +953,7 @@ a.logo-instagram::before {
 }
 
 .price-controls input {
-  width: 60px;
+  width: 80px;
   padding: 10px;
   margin-left: 10px;
   text-align: center;
@@ -969,16 +965,52 @@ a.logo-instagram::before {
   font-size: inherit;
 }
 
+.filter-item-grid {
+  margin: 0;
+  padding: 0;
+  margin-top: 54px;
+  background-color: red;
+  border: none;
+}
 
-.header-text {
+.filter-item-grid legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.filter-item-grid ul {
+  list-style: none;
+}
+
+.filter-item-features {
+  margin: 0;
+  padding: 0;
+  margin-top: 43px;
+  margin-bottom: 48px;
+  background-color: blue;
+  border: none;
+}
+
+.filter-item-features legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter-item-features ul {
+  list-style: none;
+}
+
+.catalog-layout {
+  margin-left: 120px;
+}
+
 .catalog-navigation {
   margin-top: 36px;
+  margin-left: 45px;
 }
 
 .catalog h2 {
@@ -1043,17 +1075,14 @@ a.logo-instagram::before {
 
 /* Templates */
 
-.templates-cards {
-  outline: 5px solid red;
-  outline-offset: -5px;
-}
+
 
 .templates-card-list {
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -1062,9 +1091,62 @@ a.logo-instagram::before {
 }
 
 .templates-card-item {
+  position: relative;
   flex-shrink: 0;
   margin-bottom: 20px;
   width: 360px;
+
+}
+.templates-card-item .card-header {
+  background-color:teal;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.templates-card-item:hover .card-header {
+  background-color:crimson;
+}
+
+.card-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 18px 15px;
+  display: flex;
+}
+
+.card-header li {
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+}
+
+.card-header li:last-child {
+  margin-right: 0;
+}
+
+.card-content {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 26px;
+  padding-bottom: 44px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  background-color: var(--basic-grey);
+}
+
+.templates-card-item:nth-child(1) .card-content {
+  display:block;
+
+}
+.templates-card-item:hover .card-content {
+  display:block;
+
 }
 
 .templates-card-item h3 a {
@@ -1172,4 +1254,13 @@ a.logo-instagram::before {
 
 .pagination-button-next:active {
   background-color: var(--basic-active-grey);
+}
+
+.inner-header {
+  padding-top: 1px;
+}
+.inner-header .active {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--basic-red);
 }

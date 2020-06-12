@@ -9,10 +9,10 @@
    </head>
 
    <body class="catalog-page">
-     <header class="main-header">
+     <header class="main-header inner-header">
         <nav class="main-nav">
            <div class="container">
-                 <a class="main-header-logo">
+                 <a href="index.html" class="main-header-logo">
                  <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
                  </a>
                  <ul class="site-navigation-list">
@@ -23,7 +23,7 @@
                        <a href="#">Клиенты</a>
                     </li>
                     <li class="site-navigation-item">
-                       <a href="catalog.html">Магазин</a>
+                       <a class="active">Магазин</a>
                     </li>
                     <li class="site-navigation-item">
                        <a href="#">Контакты</a>
@@ -60,8 +60,8 @@
                   </div>
                 </div>
               </fieldset>
-               <fieldset>
-                  <legend class="header-text">Сетка:</legend>
+               <fieldset class="filter-item-grid">
+                  <legend>Сетка:</legend>
                   <ul>
                      <li>
                         <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
@@ -77,8 +77,8 @@
                      </li>
                   </ul>
                </fieldset>
-               <fieldset>
-                  <legend class="header-text">Особенности:</legend>
+               <fieldset  class="filter-item-features">
+                  <legend>Особенности:</legend>
                   <ul>
                      <li>
                         <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -130,28 +130,64 @@
                <div class="templates-cards">
                   <ul class="templates-card-list">
                      <li class="templates-card-item">
+                       <div class="card-header">
+                         <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                         </ul>
+                       </div>
                         <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Седона">
+                        <div class="card-content">
                         <h3><a href="">Sedona</a></h3>
                         <p>Информационный сайт для туристов</p>
                         <a class="button button-templates" href="">9 900 ₽</a>
+                      </div>
                      </li>
                      <li class="templates-card-item">
+                       <div class="card-header">
+                         <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                         </ul>
+                       </div>
                         <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Пинл апп">
+                        <div class="card-content">
                         <h3><a href="">Pink App</a></h3>
                         <p>Продуктовый лендинг приложения для iOS и Android</p>
                         <a class="button button-templates" href="">9 900 ₽</a>
+                      </div>
                      </li>
                      <li class="templates-card-item">
+                       <div class="card-header">
+                         <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                         </ul>
+                       </div>
                         <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Барбершоп">
+                        <div class="card-content">
                         <h3><a href="">Barbershop</a></h3>
-                        <p>Сайт салона красоты.Для мужчин, да.</p>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
                         <a class="button button-templates" href="">9 900 ₽</a>
+                        </div>
                      </li>
                      <li class="templates-card-item">
+                       <div class="card-header">
+                         <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                         </ul>
+                       </div>
                         <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Мишка">
+                        <div class="card-content">
                         <h3><a href="">MISHKA</a></h3>
                         <p>Интернет-магазин вязаных игрушек</p>
                         <a class="button button-templates" href="">9 900 ₽</a>
+                        </div>
                      </li>
                      <li class="templates-card-item">
                         <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта Аплюс">
@@ -183,7 +219,7 @@
             <div class="contacts-address">
                <h3>NЁRDS DESIGN STUDIO</h3>
                <address>
-                  191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8
+                  191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
                </address>
                <a class="contacts-number" href="tel:7(812)275-75-75">7(812)275-75-75</a>
                <a class="button button-contacts" href="#">Напишите нам</a>
