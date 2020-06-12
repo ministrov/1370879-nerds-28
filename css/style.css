@@ -1010,7 +1010,7 @@ a.logo-instagram::before {
 
 .catalog-navigation {
   margin-top: 36px;
-  margin-left: 45px;
+  margin-left: 2px;
 }
 
 .catalog h2 {
@@ -1021,6 +1021,7 @@ a.logo-instagram::before {
 }
 
 .catalog-filter-list {
+  margin-left: 242px;
   list-style: none;
 }
 
@@ -1078,12 +1079,12 @@ a.logo-instagram::before {
 
 
 .templates-card-list {
-
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
+  margin-top: 34px;
 }
 
 .templates-cards ul {
@@ -1098,13 +1099,14 @@ a.logo-instagram::before {
 
 }
 .templates-card-item .card-header {
-  background-color:teal;
+  background-color: var(--basic-light-dark);
+  opacity: 0.22;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-.templates-card-item:hover .card-header {
-  background-color:crimson;
+.templates-card-item:hover {
+  background-color: var(--basic-light-dark);
 }
 
 .card-header ul {
@@ -1198,7 +1200,7 @@ a.logo-instagram::before {
 
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .pagination-button-active {
