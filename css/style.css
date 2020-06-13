@@ -49,8 +49,8 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -169,8 +169,9 @@ img {
 
 .basket-nav::before {
   content: "";
-  display: block;
   position: absolute;
+  display: block;
+
   top: 21px;
   left: 0;
   width: 16px;
@@ -206,10 +207,10 @@ img {
 }
 
 .slider-list {
-  list-style: none;
+
   margin: 0;
   padding: 0;
-
+  list-style: none;
 }
 
 .slider-list-item {
@@ -224,24 +225,25 @@ img {
 
 
 .slider-list-item h3 {
+  margin: 0;
   font-size: 55px;
   line-height: 55px;
   text-align: left;
-  margin: 0;
+
 
 }
 
 .slider-list-item p {
+  margin-top: 30px;
+  margin-left: 2px;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   color: var(--special);
-  margin-top: 30px;
-  margin-left: 2px;
+
 }
 
 .slider-list-item.first-slider {
-
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: 100% -14px;
@@ -249,7 +251,6 @@ img {
 }
 
 .slider-list-item.second-slider {
-
   background-image: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -257,7 +258,6 @@ img {
 }
 
 .slider-list-item.third-slider {
-
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -267,10 +267,11 @@ img {
 .button-slider {
   display: inline-block;
   min-width: 240px;
-  box-sizing: border-box;
+
   padding-left: 56px;
   padding-right: 55px;
   margin-top: 23px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -348,9 +349,9 @@ order: -1;
 }
 
 .button-products {
-  box-sizing: border-box;
   padding-left: 40px;
   padding-right: 39px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -421,12 +422,13 @@ order: -1;
 }
 
 .promo-text h3 {
-  font-size: 45px;
-  line-height: 45px;
-  text-align: left;
   margin: 0;
   margin-top: 30px;
   margin-bottom: 32px;
+  font-size: 45px;
+  line-height: 45px;
+  text-align: left;
+
 }
 
 .promo-text p {
@@ -449,9 +451,9 @@ order: -1;
 }
 
 .promo-text-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .promo-text-item {
@@ -486,10 +488,9 @@ order: -1;
 }
 
 .promo-statistics-list {
-
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .promo-statistics span {
@@ -517,8 +518,9 @@ order: -1;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
-  color: var(--special);
   font-weight: 400;
+  color: var(--special);
+
 }
 
 /* partners */
@@ -538,17 +540,17 @@ order: -1;
 /* hidden form*/
 
 .modal {
-  display: none;
-  width: 700px;
-  height: 600px;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  display: none;
+  width: 700px;
+  height: 600px;
+  padding: 50px;
   margin: auto;
   background-color: var(--basic-white);
-  padding: 50px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -608,9 +610,10 @@ order: -1;
 
 .button-modal {
   min-width: 240px;
-  box-sizing: border-box;
+
   padding-left: 54px;
   padding-right: 54px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -668,14 +671,11 @@ order: -1;
   position: absolute;
   top: 54px;
   left: 179px;
-
   margin: 0;
-
   padding-top: 32px;
   padding-left: 50px;
   padding-right: 45px;
   padding-bottom: 59px;
-
   border-radius: 5px;
   background-color: var(--basic-white);
 }
@@ -728,10 +728,10 @@ order: -1;
 
 .button-contacts {
   display: inline-block;
-  box-sizing: border-box;
   margin-top: 20px;
   padding-left: 44px;
   padding-right: 44px;
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: 500;
 
@@ -842,17 +842,16 @@ a.logo-instagram::before {
 /* Catalog */
 
 .catalog-page h1 {
+  margin: 0;
+  padding: 50px 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
   background-color: var(--basic-grey);
-  margin: 0;
-  padding: 50px 0;
   text-align: center;
 }
 
 .catalog-wrapper {
-
   display:flex;
   justify-content: space-around;
 }
@@ -867,6 +866,15 @@ a.logo-instagram::before {
 }
 
 /* main-nav */
+
+.inner-header {
+  padding-top: 1px;
+}
+.inner-header .active {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--basic-red);
+}
 
 .site-navigation-list a.is-active {
   display: inline-block;
@@ -957,12 +965,12 @@ a.logo-instagram::before {
   padding: 10px;
   margin-left: 10px;
   text-align: center;
+  font-family: inherit;
+  font-size: inherit;
   color: var(--special);
   border: none;
   border-radius: 5px;
   background-color: var(--basic-grey);
-  font-family: inherit;
-  font-size: inherit;
 }
 
 .filter-item-grid {
@@ -1053,11 +1061,11 @@ a.logo-instagram::before {
   padding-bottom: 15px;
   padding-left: 88px;
   padding-right: 89px;
-  background-color: var(--basic-grey);
+  color: var(--basic-black);
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: var(--basic-black);
+  background-color: var(--basic-grey);
   box-sizing: border-box;
 }
 
@@ -1110,11 +1118,11 @@ a.logo-instagram::before {
 }
 
 .card-header ul {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
   padding: 18px 15px;
-  display: flex;
+  list-style: none;
 }
 
 .card-header li {
@@ -1206,29 +1214,29 @@ a.logo-instagram::before {
 .pagination-button-active {
   min-width: 50px;
   height: 50px;
-  border: 2px solid #EEEEEE;
-  background-color: var(--basic-white);
   text-align: center;
   line-height: 50px;
+  border: 2px solid var(--basic-grey);
+  background-color: var(--basic-white);
 }
 
 
 .pagination-button {
   min-width: 50px;
   height: 50px;
-  background-color: var(--basic-grey);
   margin-left: 11px;
   text-align: center;
   line-height: 50px;
+  background-color: var(--basic-grey);
 }
 
 .pagination-button-next {
   min-width: 260px;
   height: 50px;
-  background-color: var(--basic-grey);
   margin-left: 11px;
   text-align: center;
   line-height: 50px;
+  background-color: var(--basic-grey);
 }
 
 .pagination-button:hover,
@@ -1256,13 +1264,4 @@ a.logo-instagram::before {
 
 .pagination-button-next:active {
   background-color: var(--basic-active-grey);
-}
-
-.inner-header {
-  padding-top: 1px;
-}
-.inner-header .active {
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 2px solid var(--basic-red);
 }
