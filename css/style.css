@@ -404,7 +404,8 @@ order: -1;
 
 .promo {
   margin-top: -27px;
-  margin-bottom: 150px;
+  padding-bottom: 64px;
+  border-bottom: 2px solid var(--basic-grey);
 }
 
 .promo-wrapper {
@@ -526,15 +527,54 @@ order: -1;
 /* partners */
 
 .partners {
-  margin-bottom: 80px;
+  margin-top: 43px;
+  margin-bottom: 45px;
+  padding-bottom: 38px;
+  border-bottom: 2px solid var(--basic-grey);
 }
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   list-style: none;
-  margin-top: -37px;
-  padding-right: 27px;
+  margin: 0;
+  padding: 0;
+  padding-left: 32px;
+  padding-right: 41px;
+}
+
+.partners-item {
+  position: relative;
+}
+
+.partners-item:first-child {
+  margin-right: 47px;
+  padding-right: 48px;
+}
+
+.partners-item:nth-child(2) {
+  margin-right: 59px;
+  padding-right: 44px;
+}
+
+.partners-item:nth-child(3) {
+  margin-right: 63px;
+  padding-right: 55px;
+}
+
+.partners-item:nth-child(odd) {
+  padding-top: 18px;
+}
+
+.partners-item:nth-child(-n+3)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-grey);
 }
 
 /* hidden form*/
@@ -825,6 +865,10 @@ a.logo-instagram::before {
 
 .social a:active::before {
   opacity: 0.3;
+}
+
+.discount-text {
+  margin-right: 219px;
 }
 
 .discount-text b {
