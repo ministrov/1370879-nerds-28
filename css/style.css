@@ -673,8 +673,8 @@ order: -1;
 
 .modal .close-form {
   position: relative;
-  bottom:390px;
-  right: -340px;
+  bottom:444px;
+  right: -533px;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -714,7 +714,7 @@ order: -1;
 
 .contacts {
   position: relative;
-  margin-top: 36px;
+  margin-top: 60px;
   padding-right: 40px;
 }
 
@@ -1047,14 +1047,37 @@ a.logo-instagram::before {
 }
 
 .filter-item-grid ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.filter-item-grid label {
+  padding-left: 10px;
+  line-height: 42px;
+}
+
+.filter-item-grid li {
+  position: relative;
+  padding-left: 27px;
+}
+
+.filter-item-grid li::before {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 3px solid var(--basic-light-dark);
+  border-radius: 50%;
 }
 
 .filter-item-features {
   margin: 0;
   padding: 0;
-  margin-top: 43px;
-  margin-bottom: 48px;
+  margin-top: 36px;
+  margin-bottom: 57px;
   background-color: blue;
   border: none;
 }
@@ -1067,7 +1090,29 @@ a.logo-instagram::before {
 }
 
 .filter-item-features ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.filter-item-features label {
+  line-height: 38px;
+}
+
+.filter-item-features li {
+  position: relative;
+  margin-top: 3px;
+  padding-left: 36px;
+}
+
+.filter-item-features li::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  width: 26px;
+  height: 23px;
+  border: 3px solid var(--basic-light-dark);
 }
 
 .catalog-layout {
@@ -1116,6 +1161,7 @@ a.logo-instagram::before {
 
 .button-filter {
   min-width: 260px;
+  margin-top: -15px;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 88px;
@@ -1151,7 +1197,7 @@ a.logo-instagram::before {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 30px;
   margin-left: 16px;
 }
 
@@ -1162,7 +1208,7 @@ a.logo-instagram::before {
 .templates-card-item {
   position: relative;
   flex-shrink: 0;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   width: 360px;
 
 }
@@ -1269,6 +1315,8 @@ a.logo-instagram::before {
 .pagination {
   display: flex;
   justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 15px;
 }
 
 .pagination-button-active {
@@ -1285,8 +1333,11 @@ a.logo-instagram::before {
   min-width: 50px;
   height: 50px;
   margin-left: 11px;
+  font-size: 16px;
+  line-height: 18px;
   text-align: center;
   line-height: 50px;
+  color: var(--basic-black);
   background-color: var(--basic-grey);
 }
 
@@ -1294,8 +1345,12 @@ a.logo-instagram::before {
   min-width: 260px;
   height: 50px;
   margin-left: 11px;
+  font-size: 16px;
+  line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
   line-height: 50px;
+  color: var(--basic-black);
   background-color: var(--basic-grey);
 }
 
