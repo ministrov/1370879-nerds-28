@@ -580,29 +580,30 @@ order: -1;
 /* hidden form*/
 
 .modal {
-  top: 50%;
-  left: 50%;
+  position: absolute;
+  top: 337%;
+  left: 18%;
   width: 960px;
   padding-top: 63px;
   padding-bottom: 84px;
-  padding-left: 101px;
+  padding-left: 108px;
   padding-right: 99px;
   background-color: var(--basic-white);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal h2 {
+  margin-top: 55px;
   font-size: 45px;
   font-weight: 700;
 }
 
-.input-group {
-  background-color: tomato;
+.input-group:first-child + div {
+  margin-left: 40px;
 }
 
 .input-group:nth-of-type(-n+2) input{
   width: 336px;
-  background-color: teal;
 }
 
 .modal .form-label {
@@ -614,7 +615,7 @@ order: -1;
 }
 
 .modal .form-input {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   padding: 15px 10px;
   font-size: 16px;
   line-height: 18px;
@@ -640,7 +641,8 @@ order: -1;
 }
 
 .form-textarea {
-  width: 100%;
+  width: 757px;
+  height: 118px;
   font: inherit;
   color: var(--basic-light-black);
   border-radius: 5px;
@@ -662,7 +664,7 @@ order: -1;
 
 .button-modal {
   min-width: 240px;
-
+  margin-top: 47px;
   padding-left: 54px;
   padding-right: 54px;
   box-sizing: border-box;
@@ -942,10 +944,6 @@ a.logo-instagram::before {
 
 /* filter*/
 
-.filter-form {
-  background-color: yellow;
-}
-
 .filter-item {
   margin-top: 55px;
   padding: 0;
@@ -1035,7 +1033,6 @@ a.logo-instagram::before {
   margin: 0;
   padding: 0;
   margin-top: 54px;
-  background-color: red;
   border: none;
 }
 
@@ -1078,7 +1075,6 @@ a.logo-instagram::before {
   padding: 0;
   margin-top: 36px;
   margin-bottom: 57px;
-  background-color: blue;
   border: none;
 }
 
@@ -1135,6 +1131,14 @@ a.logo-instagram::before {
 .catalog-filter-list {
   margin-left: 226px;
   list-style: none;
+}
+
+.catalog-filter-item:first-child {
+  margin-right: 25px;
+}
+
+.catalog-filter-item:first-child + li {
+  margin-right: 25px;
 }
 
 .catalog-filter-link {
