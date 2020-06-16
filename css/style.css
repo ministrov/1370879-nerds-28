@@ -3,7 +3,7 @@
 :root {
   --basic-black: #000000;
   --basic-light-black: #444444;
-  --basic-light-dark: #D4D4D4;
+  --basic-light-dark: #4D4D4D;
   --basic-exclusive-dark: #666666;
   --basic-grey: #EEEEEE;
   --basic-dark-grey: #DFDFDF;
@@ -141,6 +141,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 5px;
   margin-top: 16px;
   margin-right: 47px;
 
@@ -580,6 +581,7 @@ order: -1;
 /* hidden form*/
 
 .modal {
+  display: none;
   position: absolute;
   top: 337%;
   left: 18%;
@@ -710,13 +712,13 @@ order: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 51px;
   margin-bottom: 68px;
 }
 
 .contacts {
   position: relative;
-  margin-top: 60px;
+  margin-top: 27px;
   padding-right: 40px;
 }
 
@@ -751,7 +753,26 @@ order: -1;
   text-align: left;
 }
 
+
+.discount-text {
+  margin-right: 219px;
+}
+
+.discount-text b {
+  font-size: 36px;
+  line-height: 37px;
+  font-weight: 700;
+}
+
+.discount-text p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-light-black);
+}
+
 .main-footer {
+  margin-top: 37px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -881,28 +902,13 @@ a.logo-instagram::before {
   opacity: 0.3;
 }
 
-.discount-text {
-  margin-right: 219px;
-}
-
-.discount-text b {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
-.discount-text p {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--basic-light-black);
-}
-
 /* Catalog */
 
 .catalog-page h1 {
   margin: 0;
   padding: 76px 0;
   padding-right: 20px;
+  padding-bottom: 111px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
@@ -913,7 +919,7 @@ a.logo-instagram::before {
 .catalog-wrapper {
   display:flex;
   justify-content: space-around;
-  margin-top: 38px;
+  margin-top: 4px;
 }
 
 .catalog-navigation {
@@ -925,22 +931,21 @@ a.logo-instagram::before {
   justify-content: space-between;
 }
 
-/* main-nav */
+/* main-nav active*/
 
-.inner-header {
-  padding-top: 1px;
-}
-.inner-header .active {
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 2px solid var(--basic-red);
+.site-navigation-item .active {
+  position: relative;
 }
 
-.site-navigation-list a.is-active {
-  display: inline-block;
-  border-bottom: 2px solid;
-  border-color: var(--basic-red);
-}
+  a.active::before {
+    position: absolute;
+    content: "";
+    width: 74px;
+    height: 2px;
+    top: 37px;
+    left: 0;
+    background-color: var(--basic-red);
+  }
 
 /* filter*/
 
@@ -1201,8 +1206,9 @@ a.logo-instagram::before {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 73px;
   margin-left: 16px;
+  margin-bottom: -26px;
 }
 
 .templates-cards ul {
@@ -1212,19 +1218,32 @@ a.logo-instagram::before {
 .templates-card-item {
   position: relative;
   flex-shrink: 0;
-  margin-bottom: 4px;
+  margin-bottom: 40px;
   width: 360px;
-
-}
-.templates-card-item .card-header {
-  background-color: var(--basic-light-dark);
-  opacity: 0.22;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
 }
 
-.templates-card-item:hover {
-  background-color: var(--basic-light-dark);
+.templates-card-item:nth-child(3),
+.templates-card-item:nth-child(4) {
+  margin-top: 30px;
+}
+
+.templates-card-item:nth-child(5),
+.templates-card-item:nth-child(6) {
+  margin-top: 30px;
+}
+
+li.templates-card-item::before {
+  position: absolute;
+  content: "";
+  width: 360px;
+  height: 40px;
+  top: -40px;
+  left: 0;
+  background-image: url("../img/browser.png");
+}
+
+li.templates-card-item:hover::before {
+  background-image: url("../img/browser2.png");
 }
 
 .card-header ul {
@@ -1233,18 +1252,6 @@ a.logo-instagram::before {
   padding: 0;
   padding: 18px 15px;
   list-style: none;
-}
-
-.card-header li {
-  margin-right: 8px;
-  width: 15px;
-  height: 15px;
-  background-color: var(--basic-white);
-  border-radius: 50%;
-}
-
-.card-header li:last-child {
-  margin-right: 0;
 }
 
 .card-content {
@@ -1260,10 +1267,6 @@ a.logo-instagram::before {
   background-color: var(--basic-grey);
 }
 
-.templates-card-item:nth-child(1) .card-content {
-  display:block;
-
-}
 .templates-card-item:hover .card-content {
   display:block;
 
@@ -1319,7 +1322,7 @@ a.logo-instagram::before {
 .pagination {
   display: flex;
   justify-content: flex-start;
-  margin-top: 50px;
+  margin-top: 18px;
   margin-left: 15px;
 }
 
