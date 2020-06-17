@@ -581,13 +581,14 @@ order: -1;
 /* hidden form*/
 
 .modal {
+  display: none;
   position: absolute;
-  top: 345%;
+  top: 170%;
   left: 18%;
   width: 965px;
-  padding-top: 63px;
+  padding-top: 22px;
   padding-bottom: 84px;
-  padding-left: 110px;
+  padding-left: 108px;
   padding-right: 99px;
   background-color: var(--basic-white);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -686,8 +687,8 @@ order: -1;
 
 .modal .close-form {
   position: relative;
-  bottom:444px;
-  right: -533px;
+  bottom:421px;
+  right: -518px;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -717,6 +718,12 @@ order: -1;
 
 /* main-footer */
 
+.main-footer {
+  margin-top: 9px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
@@ -727,7 +734,7 @@ order: -1;
 
 .contacts {
   position: relative;
-  margin-top: 27px;
+  margin-top: 52px;
   padding-right: 40px;
 }
 
@@ -778,12 +785,6 @@ order: -1;
   font-size: 16px;
   line-height: 19px;
   color: var(--basic-light-black);
-}
-
-.main-footer {
-  margin-top: 37px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
 .contacts h3{
