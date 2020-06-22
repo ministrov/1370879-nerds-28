@@ -581,11 +581,10 @@ order: -1;
 /* hidden form*/
 
 .modal {
-  display: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 19%;
-  width: 963px;
+  width: 960px;
   margin-left: 5px;
   padding-top: 20px;
   padding-bottom: 84px;
@@ -596,25 +595,35 @@ order: -1;
 }
 
 .modal h2 {
-  margin-top: 55px;
-  font-size: 45px;
+  margin-top: 58px;
+  font-size: 44px;
   font-weight: 700;
 }
 
+.input-group:first-child input {
+  margin-left: -3px;
+}
+
 .input-group:first-child + div {
-  margin-left: 40px;
+  margin-left: 39px;
 }
 
 .input-group:first-child label {
-  margin-top: 15px;
+  margin-top: 14px;
+  margin-left: -3px;
 }
 
 .input-group:first-child + div label {
-  margin-top: 15px;
+  margin-top: 14px;
+  margin-left: 1px;
+}
+
+.input-group:last-child label {
+  margin-left: -2px;
 }
 
 .input-group:nth-of-type(-n+2) input{
-  width: 358px;
+  width: 360px;
 }
 
 .modal .form-label {
@@ -627,7 +636,7 @@ order: -1;
 
 .modal .form-input {
   margin-bottom: 34px;
-  padding: 15px 10px;
+  padding: 14px 12px;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -677,9 +686,10 @@ order: -1;
 
 .button-modal {
   min-width: 259px;
-  margin-top: 39px;
-  padding-left: 55px;
-  padding-right: 55px;
+  margin-top: 42px;
+  margin-left: -2px;
+  padding-left: 47px;
+  padding-right: 52px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
@@ -688,8 +698,8 @@ order: -1;
 
 .modal .close-form {
   position: relative;
-  bottom:421px;
-  right: -518px;
+  bottom:395px;
+  right: -480px;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1239,7 +1249,7 @@ a.logo-instagram::before {
 
 .templates-card-item:nth-child(5),
 .templates-card-item:nth-child(6) {
-  margin-top: 31px;
+  margin-top: 28px;
 }
 
 .templates-card-item img {
@@ -1282,8 +1292,9 @@ li.templates-card-item:hover::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-top: 26px;
-  padding-bottom: 41px;
+  min-height: 231px;
+  padding-top: 7px;
+  padding-bottom: 20px;
   padding-left: 80px;
   padding-right: 80px;
   text-align: center;
@@ -1311,6 +1322,8 @@ li.templates-card-item:hover::before {
 }
 
 .templates-card-item h3 a {
+  display: inline-block;
+  margin-bottom: -4px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
