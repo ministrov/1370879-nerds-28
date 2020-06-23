@@ -1134,7 +1134,15 @@ a.logo-instagram::before {
   left: -26px;
   border: 2px solid var(--basic-light-dark);
   opacity: 0.4;
-  border-radius: 50%
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked ~ label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio label:hover::before {
+  opacity: 1;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1149,15 +1157,20 @@ a.logo-instagram::before {
   opacity: 0.4;
 }
 
+.filter-input-radio:checked + label:hover::after {
+  opacity: 1;
+}
+
 .filter-item-features {
   margin: 0;
   padding: 0;
   margin-top: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
   border: none;
 }
 
 .filter-item-features legend {
+  margin-bottom: 6px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1165,8 +1178,8 @@ a.logo-instagram::before {
 }
 
 .filter-item-features ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -1174,36 +1187,57 @@ a.logo-instagram::before {
   display: block;
   position: relative;
   top: 2px;
-  cursor: pointer;
-  line-height: 38px;
+  margin-bottom: 17px;
+  padding-left: 36px;
   color: var(--special);
+  cursor: pointer;
 }
+
+.filter-item-features label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked ~ label:hover::before {
+  opacity: 1;
+}
+
 
 .filter-item-features label::before {
   position: absolute;
   content: "";
+  display: block;
+  top: 0;
+  left: 0;
+
   width: 23px;
   height: 23px;
-  top: 7px;
-  left: -35px;
-  border: 2px solid var(--basic-light-dark);
+
+  background-image: url("../img/checkbox-off1.svg");
+  background-repeat: no-repeat;
+
   opacity: 0.4;
 }
 
-.filter-input-checkbox:checked + label::after {
-  position: absolute;
+.filter-input-checkbox:checked ~ label::before {
   content: "";
-  width: 22px;
-  height: 17px;
-  top: 10px;
-  left: -34px;
-  background-image: url("../img/check-mark.svg");
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
   opacity: 0.4;
 }
 
 .filter-item-features li {
   margin-top: 4px;
-  padding-left: 36px;
+  margin-bottom: 17px;
+}
+
+.filter-item-features li:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-layout {
