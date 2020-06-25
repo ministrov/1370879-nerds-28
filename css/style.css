@@ -143,8 +143,8 @@ img {
   margin: 0;
   padding: 0;
   padding-left: 5px;
-  margin-top: 16px;
-  margin-right: 47px;
+  margin-top: 20px;
+  margin-right: 50px;
 
 }
 
@@ -152,8 +152,12 @@ img {
   margin-right: 44px;
 }
 
+.site-navigation-item:nth-child(3) {
+  margin-left: 5px;
+}
+
 .site-navigation-item:last-child {
-  margin-right: 0;
+  margin-right: -4px;
 }
 
 .site-navigation-list a {
@@ -205,6 +209,8 @@ img {
 /* Slider*/
 
 .slider {
+  padding-top: 24px;
+  padding-left: 3px;
   background-color: var(--basic-grey);
 }
 
@@ -236,7 +242,7 @@ img {
   position: absolute;
   content: "";
   top: 5px;
-  left: 4px;
+  left: 6px;
   width: 8px;
   height: 8px;
   background-color: var(--basic-white);
@@ -246,8 +252,8 @@ img {
 
 .slider-controls {
   position: absolute;
-  top: 402px;
-  left: 715px;
+  top: 431px;
+  left: 716px;
   z-index: 1000;
 }
 
@@ -331,8 +337,18 @@ img {
 /* products */
 
 .products {
-  margin-top: 79px;
-  margin-bottom: 155px;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 153px;
+}
+
+.products::before {
+  content: "";
+  position: absolute;
+  width: 1158px;
+  height: 2px;
+  top: 427px;
+  background-color: var(--basic-grey);
 }
 
 .products-list {
@@ -393,6 +409,7 @@ order: -1;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  border-radius: 3px;
 }
 
 .button-products:hover,
@@ -441,8 +458,8 @@ order: -1;
 /* Promo  */
 
 .promo {
-  margin-top: -27px;
-  padding-bottom: 64px;
+  margin-top: -26px;
+  padding-bottom: 73px;
   border-bottom: 2px solid var(--basic-grey);
 }
 
@@ -465,9 +482,10 @@ order: -1;
   margin-top: 30px;
   margin-bottom: 32px;
   font-size: 45px;
-  line-height: 45px;
+  font-style: normal;
+  font-weight: 500;
   text-align: left;
-
+  line-height: 45px;
 }
 
 .promo-text p {
@@ -497,8 +515,8 @@ order: -1;
 
 .promo-text-item {
   position: relative;
-  margin-bottom: 30px;
-  padding-left: 35px;
+  margin-bottom: 25px;
+  padding-left: 37px;
 }
 
 .promo-text-item::before {
@@ -536,6 +554,7 @@ order: -1;
   display: inline-block;
   margin-top: 21px;
   margin-bottom: 31px;
+  padding-left: 18px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -546,7 +565,7 @@ order: -1;
 .promo-statistics-item p:first-child {
   display: inline-block;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
@@ -559,14 +578,17 @@ order: -1;
   line-height: 18px;
   font-weight: 400;
   color: var(--special);
+}
 
+.promo-statistics-item p:last-child {
+  margin-left: 7px;
 }
 
 /* partners */
 
 .partners {
-  margin-top: 43px;
-  margin-bottom: 45px;
+  margin-top: 46px;
+  margin-bottom: 17px;
   padding-bottom: 38px;
   border-bottom: 2px solid var(--basic-grey);
 }
@@ -583,6 +605,10 @@ order: -1;
 
 .partners-item {
   position: relative;
+}
+
+.partners-item img {
+  opacity: 0.2;
 }
 
 .partners-item:first-child {
@@ -774,15 +800,15 @@ order: -1;
 
 .contacts {
   position: relative;
+  left: 39px;
   margin-top: 52px;
-  padding-right: 40px;
 }
 
 .contacts::before {
   position: absolute;
   content: "";
   top: 87px;
-  left: 862px;
+  left: 824px;
   width: 231px;
   height: 190px;
   background-image: url("../img/map-marker.png");
@@ -792,12 +818,12 @@ order: -1;
   display: inline-block;
   position: absolute;
   top: 54px;
-  left: 179px;
+  left: 142px;
   margin: 0;
   padding-top: 32px;
-  padding-left: 50px;
-  padding-right: 45px;
-  padding-bottom: 48px;
+  padding-left: 52px;
+  padding-right: 48px;
+  padding-bottom: 46px;
   border-radius: 5px;
   background-color: var(--basic-white);
 }
@@ -838,6 +864,7 @@ order: -1;
 }
 
 .contacts h3{
+  margin-left: -2px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -845,7 +872,7 @@ order: -1;
 
 .contacts-number {
   display: block;
-  margin-top: 17px;
+  margin-top: 12px;
   color: var(--basic-exclusive-dark);
 }
 
@@ -853,6 +880,8 @@ order: -1;
   display: inline-block;
   max-width: 210px;
   margin: 0;
+  margin-left: -3px;
+  margin-top: 5px;
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
@@ -862,9 +891,10 @@ order: -1;
 
 .button-contacts {
   display: inline-block;
-  margin-top: 33px;
+  margin-top: 36px;
+  margin-left: -2px;
   padding-left: 44px;
-  padding-right: 44px;
+  padding-right: 46px;
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 500;
@@ -891,6 +921,12 @@ order: -1;
 
 .social-list {
   list-style: none;
+}
+
+.social-item {
+  margin-right: 13px;
+  margin-bottom: 3px;
+  margin-top: -3px;
 }
 
 
@@ -1093,6 +1129,10 @@ a.logo-instagram::before {
   background-color: var(--basic-grey);
 }
 
+.min-price input {
+  margin-left: 6px;
+}
+
 .filter-item-grid {
   margin: 0;
   padding: 0;
@@ -1115,6 +1155,7 @@ a.logo-instagram::before {
 
 .filter-item-grid label {
   position: relative;
+  top: 3px;
   padding-left: 10px;
   line-height: 42px;
   cursor: pointer;
@@ -1128,11 +1169,11 @@ a.logo-instagram::before {
 .filter-item-grid label::before {
   position: absolute;
   content: "";
-  width: 23px;
-  height: 23px;
-  top: 1px;
+  width: 25px;
+  height: 25px;
+  top: -3px;
   left: -26px;
-  border: 2px solid var(--basic-light-dark);
+  border: 4px solid var(--basic-light-dark);
   opacity: 0.4;
   border-radius: 50%;
 }
@@ -1141,7 +1182,7 @@ a.logo-instagram::before {
   opacity: 1;
 }
 
-.filter-input-radio label:hover::before {
+.filter-item-grid label:hover::before {
   opacity: 1;
 }
 
@@ -1150,8 +1191,8 @@ a.logo-instagram::before {
   content: "";
   width: 9px;
   height: 9px;
-  top: 8px;
-  left: -19px;
+  top: 5px;
+  left: -18px;
   background-color: var(--basic-light-dark);
   border-radius: 50%;
   opacity: 0.4;
@@ -1275,11 +1316,11 @@ a.logo-instagram::before {
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
-  opacity: 0.3;
 }
 
-.catalog-filter-link .checked {
-  color: var(--basic-black);
+.catalog-filter-list li:nth-child(2),
+.catalog-filter-list li:nth-child(3) {
+  opacity: 0.3;
 }
 
 .catalog-filter-arrows {
@@ -1306,6 +1347,7 @@ a.logo-instagram::before {
   top: 8px;
   left: 28px;
   background-image: url("../img/icon-up.svg");
+  opacity: 0.2;
 }
 
 .catalog-filter-link:hover,
