@@ -607,13 +607,17 @@ li.promo-statistics-item:last-child {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  padding-left: 32px;
-  padding-right: 41px;
+  margin-left: -14px;
+  margin-right: -19px;
   list-style: none;
 }
 
 .partners-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  width: 25%;
 }
 
 .partners-item img {
@@ -627,25 +631,6 @@ li.promo-statistics-item:last-child {
 
 .partners-item img:active {
   opacity: 0.1;
-}
-
-.partners-item:first-child {
-  margin-right: 47px;
-  padding-right: 48px;
-}
-
-.partners-item:nth-child(2) {
-  margin-right: 59px;
-  padding-right: 44px;
-}
-
-.partners-item:nth-child(3) {
-  margin-right: 63px;
-  padding-right: 55px;
-}
-
-.partners-item:nth-child(odd) {
-  padding-top: 18px;
 }
 
 .partners-item:nth-child(-n+3)::before {
@@ -1185,24 +1170,22 @@ a.logo-instagram::before {
 }
 
 .filter-item-grid label::before {
-  position: absolute;
   content: "";
+  position: absolute;
   width: 25px;
   height: 25px;
   top: -3px;
   left: -26px;
   border: 4px solid var(--basic-light-dark);
-  opacity: 0.4;
   border-radius: 50%;
+  opacity: 0.4;
 }
 
-.filter-input-radio:checked ~ label:hover::before,
-.filter-input-radio:checked ~ label:focus::before {
+.filter-input-radio:checked ~ label:hover::before {
   opacity: 1;
 }
 
-.filter-item-grid label:hover::before,
-.filter-item-grid label:focus::before {
+.filter-input-radio:focus + label::before {
   opacity: 1;
 }
 
@@ -1215,7 +1198,7 @@ a.logo-instagram::before {
   left: -18px;
   background-color: var(--basic-light-dark);
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.4
 }
 
 .filter-input-radio:checked + label:hover::after {
@@ -1254,30 +1237,29 @@ a.logo-instagram::before {
   cursor: pointer;
 }
 
-.filter-item-features label:hover::before,
-.filter-item-features label:focus::before {
+.filter-item-features label:hover::before {
   opacity: 1;
 }
 
-.filter-input-checkbox:checked ~ label:hover::before,
-.filter-input-checkbox:checked ~ label:focus::before {
+.filter-item-features:focus label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked ~ label:hover::before {
   opacity: 1;
 }
 
 
 .filter-item-features label::before {
-  position: absolute;
   content: "";
   display: block;
+  position: absolute;
   top: 0;
   left: 0;
-
   width: 23px;
   height: 23px;
-
   background-image: url("../img/checkbox-off1.svg");
   background-repeat: no-repeat;
-
   opacity: 0.4;
 }
 
@@ -1288,10 +1270,8 @@ a.logo-instagram::before {
   top: 0;
   left: 0;
   width: 25px;
-  height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  opacity: 0.4;
 }
 
 .filter-item-features li {
@@ -1472,8 +1452,8 @@ a.arrow-up {
 }
 
 li.templates-card-item::before {
-  position: absolute;
   content: "";
+  position: absolute;
   width: 360px;
   height: 40px;
   top: 0;
@@ -1532,8 +1512,8 @@ li.templates-card-item:hover::before {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: var(--basic-black);
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .templates-card-item h3 a:hover,
@@ -1589,7 +1569,7 @@ li.templates-card-item:hover::before {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  line-height: 50px;
+  line-height: 45px;
   border: 3px solid var(--basic-grey);
   background-color: var(--basic-white);
   border-radius: 3px;
@@ -1597,9 +1577,9 @@ li.templates-card-item:hover::before {
 
 
 .pagination-button {
+  margin-left: 11px;
   min-width: 50px;
   height: 50px;
-  margin-left: 11px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1633,6 +1613,7 @@ li.templates-card-item:hover::before {
 .pagination-button-active:hover,
 .pagination-button-active:focus {
   background-color: var(--basic-dark-grey);
+  border-color: var(--basic-dark-grey);
 }
 
 .pagination-button-next:hover,
