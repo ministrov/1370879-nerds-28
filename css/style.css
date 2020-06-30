@@ -143,7 +143,7 @@ img {
   margin: 0;
   padding: 0;
   padding-left: 5px;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-right: 50px;
 
 }
@@ -209,7 +209,6 @@ img {
 /* Slider*/
 
 .slider {
-  padding-top: 24px;
   background-color: var(--basic-grey);
 }
 
@@ -260,6 +259,7 @@ img {
   display: none;
   padding-top: 60px;
   padding-bottom: 73px;
+  min-height: 431px;
 }
 
 .slider-list-item:nth-child(1) {
@@ -269,6 +269,8 @@ img {
 
 .slider-list-item h3 {
   margin: 0;
+  margin-top: 2px;
+  margin-left: 3px;
   font-size: 55px;
   line-height: 55px;
   text-align: left;
@@ -277,8 +279,8 @@ img {
 }
 
 .slider-list-item p {
-  margin-top: 30px;
-  margin-left: 2px;
+  margin-top: 26px;
+  margin-left: 3px;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
@@ -309,15 +311,15 @@ img {
 
 .button-slider {
   display: inline-block;
-  min-width: 240px;
-
-  padding-left: 56px;
+  padding-left: 57px;
   padding-right: 55px;
-  margin-top: 23px;
-  box-sizing: border-box;
+  margin-top: 22px;
+  min-width: 240px;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
+  line-height: 18px;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .button-slider:hover,
@@ -820,7 +822,7 @@ li.promo-statistics-item:last-child {
 .contacts-address {
   display: inline-block;
   position: absolute;
-  top: 54px;
+  top: 55px;
   left: 181px;
   margin: 0;
   padding-top: 32px;
@@ -850,10 +852,12 @@ li.promo-statistics-item:last-child {
 
 
 .discount-text {
-  margin-right: 219px;
+  margin-right: 217px;
 }
 
 .discount-text b {
+  display: inline-block;
+  padding-top: 5px;
   font-size: 36px;
   line-height: 37px;
   font-weight: 700;
@@ -898,10 +902,10 @@ li.promo-statistics-item:last-child {
   margin-left: -2px;
   padding-left: 44px;
   padding-right: 46px;
-  box-sizing: border-box;
   font-size: 16px;
   font-weight: 500;
-
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .button-contacts:hover,
@@ -1185,6 +1189,14 @@ a.logo-instagram::before {
   opacity: 1;
 }
 
+.filter-item-grid label:hover::before {
+  opacity: 1;
+}
+
+.filter-item-grid label:focus::before {
+  opacity: 1;
+}
+
 .filter-input-radio:focus + label::before {
   opacity: 1;
 }
@@ -1237,19 +1249,6 @@ a.logo-instagram::before {
   cursor: pointer;
 }
 
-.filter-item-features label:hover::before {
-  opacity: 1;
-}
-
-.filter-item-features:focus label::before {
-  opacity: 1;
-}
-
-.filter-input-checkbox:checked ~ label:hover::before {
-  opacity: 1;
-}
-
-
 .filter-item-features label::before {
   content: "";
   display: block;
@@ -1272,6 +1271,19 @@ a.logo-instagram::before {
   width: 25px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+}
+
+
+.filter-item-features label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked ~ label:hover::before {
+  opacity: 1;
 }
 
 .filter-item-features li {
