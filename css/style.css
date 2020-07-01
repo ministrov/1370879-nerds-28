@@ -257,7 +257,7 @@ img {
 
 .slider-list-item {
   display: none;
-  padding-top: 60px;
+  padding-top: 82px;
   padding-bottom: 73px;
   min-height: 431px;
 }
@@ -289,31 +289,55 @@ img {
 }
 
 .slider-list-item.first-slider {
+  background-color: var(--basic-grey);
+}
+
+.slider-list-item.first-slider::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 760px;
+  height: 431px;
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
-  background-position: 100% -14px;
-  background-color: var(--basic-grey);
 }
 
 .slider-list-item.second-slider {
-  background-image: url("../img/nerds-index-slide2.png");
-  background-repeat: no-repeat;
-  background-position: right;
   background-color: var(--basic-grey);
 }
 
+.slider-list-item.second-slider::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 760px;
+  height: 431px;
+  background-image: url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+}
+
 .slider-list-item.third-slider {
+  background-color: var(--basic-grey);
+}
+
+.slider-list-item.third-slider::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 760px;
+  height: 431px;
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
-  background-position: right;
-  background-color: var(--basic-grey);
 }
 
 .button-slider {
   display: inline-block;
+  margin-top: 24px;
   padding-left: 57px;
   padding-right: 55px;
-  margin-top: 22px;
   min-width: 240px;
   font-size: 16px;
   font-weight: 500;
@@ -857,7 +881,6 @@ li.promo-statistics-item:last-child {
 
 .discount-text b {
   display: inline-block;
-  padding-top: 5px;
   font-size: 36px;
   line-height: 37px;
   font-weight: 700;
@@ -898,8 +921,8 @@ li.promo-statistics-item:last-child {
 
 .button-contacts {
   display: inline-block;
-  margin-top: 36px;
-  margin-left: -2px;
+  margin-top: 34px;
+  margin-left: -3px;
   padding-left: 44px;
   padding-right: 46px;
   font-size: 16px;

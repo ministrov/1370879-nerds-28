@@ -7,60 +7,58 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
-
    <body class="page-body catalog-page">
-     <header class="main-header">
-        <nav class="main-nav">
-           <div class="container">
-                 <a href="index.html" class="main-header-logo">
-                 <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
-                 </a>
-                 <ul class="site-navigation-list">
-                    <li class="site-navigation-item">
-                       <a href="#">Студия</a>
-                    </li>
-                    <li class="site-navigation-item">
-                       <a href="#">Клиенты</a>
-                    </li>
-                    <li class="site-navigation-item">
-                       <a class="active">Магазин</a>
-                    </li>
-                    <li class="site-navigation-item">
-                       <a href="#">Контакты</a>
-                    </li>
-                 </ul>
-                 <div class="basket-nav">
-                    <a href="#">Корзина</a>
-                 </div>
-           </div>
-        </nav>
-     </header>
-
+      <header class="main-header">
+         <nav class="main-nav">
+            <div class="container">
+               <a href="index.html" class="main-header-logo">
+               <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии веб проектов Нёрдс">
+               </a>
+               <ul class="site-navigation-list">
+                  <li class="site-navigation-item">
+                     <a href="#">Студия</a>
+                  </li>
+                  <li class="site-navigation-item">
+                     <a href="#">Клиенты</a>
+                  </li>
+                  <li class="site-navigation-item">
+                     <a class="active">Магазин</a>
+                  </li>
+                  <li class="site-navigation-item">
+                     <a href="#">Контакты</a>
+                  </li>
+               </ul>
+               <div class="basket-nav">
+                  <a href="#">Корзина</a>
+               </div>
+            </div>
+         </nav>
+      </header>
       <main>
          <h1>Магазин готовых шаблонов</h1>
          <div class="container catalog-wrapper">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="filter-item">
-                <legend>Стоимость:</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+               <fieldset class="filter-item">
+                  <legend>Стоимость:</legend>
+                  <div class="range-filter">
+                     <div class="range-controls">
+                        <div class="scale">
+                           <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0"></div>
+                        <div class="toggle toggle-max" tabindex="0"></div>
+                     </div>
+                     <div class="price-controls">
+                        <label class="min-price">
+                        от <input type="text" name="min-price" value="0">
+                        </label>
+                        <label class="max-price">
+                        до <input type="text" name="max-price" value="15000">
+                        </label>
+                     </div>
                   </div>
-                  <div class="price-controls">
-                    <label class="min-price">
-                      от <input type="text" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">
-                      до <input type="text" name="max-price" value="15000">
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset class="filter-item-grid">
+               </fieldset>
+               <fieldset class="filter-item-grid">
                   <legend>Сетка:</legend>
                   <ul>
                      <li>
@@ -104,7 +102,6 @@
                </fieldset>
                <button class="button button-filter" type="button">Показать</button>
             </form>
-
             <div class="catalog-layout">
                <div class="catalog">
                   <div class="catalog-navigation">
@@ -126,55 +123,54 @@
                      </div>
                   </div>
                </div>
-
                <div class="templates-cards">
                   <ul class="templates-card-list">
                      <li class="templates-card-item">
                         <img src="img/img-sedona.jpg" width="360" height="578" alt="Шаблон сайта Седона">
                         <div class="card-content">
-                          <h3><a href="">Sedona</a></h3>
-                          <p>Информационный сайт для туристов</p>
-                          <a class="button button-templates" href="">9 900 ₽</a>
+                           <h3><a href="">Sedona</a></h3>
+                           <p>Информационный сайт для туристов</p>
+                           <a class="button button-templates" href="">9 900 ₽</a>
                         </div>
                      </li>
                      <li class="templates-card-item">
                         <img src="img/img-pink.jpg" width="360" height="578" alt="Шаблон сайта Пинл апп">
                         <div class="card-content">
-                          <h3><a href="">Pink App</a></h3>
-                          <p>Продуктовый лендинг приложения для iOS и Android</p>
-                          <a class="button button-templates" href="">9 900 ₽</a>
-                      </div>
+                           <h3><a href="">Pink App</a></h3>
+                           <p>Продуктовый лендинг приложения для iOS и Android</p>
+                           <a class="button button-templates" href="">9 900 ₽</a>
+                        </div>
                      </li>
                      <li class="templates-card-item">
                         <img src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон сайта Барбершоп">
                         <div class="card-content">
-                          <h3><a href="">Barbershop</a></h3>
-                          <p>Сайт салона красоты. Для мужчин, да.</p>
-                          <a class="button button-templates" href="">9 900 ₽</a>
+                           <h3><a href="">Barbershop</a></h3>
+                           <p>Сайт салона красоты. Для мужчин, да.</p>
+                           <a class="button button-templates" href="">9 900 ₽</a>
                         </div>
                      </li>
                      <li class="templates-card-item">
                         <img src="img/img-mishka.jpg" width="360" height="578" alt="Шаблон сайта Мишка">
                         <div class="card-content">
-                          <h3><a href="">MISHKA</a></h3>
-                          <p>Интернет-магазин вязаных игрушек</p>
-                          <a class="button button-templates" href="">9 900 ₽</a>
+                           <h3><a href="">MISHKA</a></h3>
+                           <p>Интернет-магазин вязаных игрушек</p>
+                           <a class="button button-templates" href="">9 900 ₽</a>
                         </div>
                      </li>
                      <li class="templates-card-item">
                         <img src="img/img-aplus.jpg" width="360" height="578" alt="Шаблон сайта Аплюс">
                         <div class="card-content">
-                          <h3><a href="">A Plus</a></h3>
-                          <p>Лендинг курсов повышения квалификации</p>
-                          <a class="button button-templates">9 900 ₽</a>
+                           <h3><a href="">A Plus</a></h3>
+                           <p>Лендинг курсов повышения квалификации</p>
+                           <a class="button button-templates">9 900 ₽</a>
                         </div>
                      </li>
                      <li class="templates-card-item">
                         <img src="img/img-kvast.jpg" width="360" height="578" alt="Шаблон сайта Кваст">
                         <div class="card-content">
-                          <h3><a href="">КВАСТ</a></h3>
-                          <p>Промо-сайт производителя крафтового кваса</p>
-                          <a class="button button-templates" href="">9 900 ₽</a>
+                           <h3><a href="">КВАСТ</a></h3>
+                           <p>Промо-сайт производителя крафтового кваса</p>
+                           <a class="button button-templates" href="">9 900 ₽</a>
                         </div>
                      </li>
                   </ul>
@@ -188,10 +184,9 @@
             </div>
          </div>
       </main>
-
       <footer class="main-footer">
          <section class="contacts">
-           <img src="img/map-1.png" width="1440" height="416" alt="Подробная карта, как добраться до студии Нёрдс">
+            <img src="img/map-1.png" width="1440" height="416" alt="Подробная карта, как добраться до студии Нёрдс">
             <div class="contacts-address">
                <h3>NЁRDS DESIGN STUDIO</h3>
                <p>
@@ -201,7 +196,6 @@
                <a class="button button-contacts" href="#">Напишите нам</a>
             </div>
          </section>
-
          <section class="social">
             <h3 class="visually-hidden">Социальные сети</h3>
             <div class="container footer-wrapper">
@@ -229,26 +223,24 @@
             </div>
          </section>
       </footer>
-
       <section class="modal">
          <h2>Напишите нам</h2>
          <form action="https://echo.htmlacademy.ru" method="post">
             <div class="input-wrapper">
-              <div class="input-group">
-               <label class="form-label" for="name-surename">Ваше имя:</label>
-               <input class="form-input" id="name-surename"  type="text" name="name" placeholder="Имя Фамилия">
-             </div>
-
-            <div class="input-group">
-               <label class="form-label" for="input-mail">Ваш e-mail</label>
-               <input class="form-input" id="input-mail" type="email" name="email" placeholder="email@example.com">
-            </div>
-              <div class="input-group">
-               <label class="form-label" for="comments-field">
-               Текст письма:
-               </label>
-               <textarea class="form-textarea" name="text" id="comments-field" rows="6" cols="70" placeholder="В свободной форме"></textarea>
-             </div>
+               <div class="input-group">
+                  <label class="form-label" for="name-surename">Ваше имя:</label>
+                  <input class="form-input" id="name-surename"  type="text" name="name" placeholder="Имя Фамилия">
+               </div>
+               <div class="input-group">
+                  <label class="form-label" for="input-mail">Ваш e-mail</label>
+                  <input class="form-input" id="input-mail" type="email" name="email" placeholder="email@example.com">
+               </div>
+               <div class="input-group">
+                  <label class="form-label" for="comments-field">
+                  Текст письма:
+                  </label>
+                  <textarea class="form-textarea" name="text" id="comments-field" rows="6" cols="70" placeholder="В свободной форме"></textarea>
+               </div>
             </div>
             <button class="button button-modal" type="submit">Отправить</button>
             <button class="close-form" type="button" aria-label="Закрыть форму" tabindex="0"></button>
