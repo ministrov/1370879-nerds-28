@@ -71,17 +71,13 @@ body {
 .button {
   padding-top: 16px;
   padding-bottom: 16px;
-
   font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 18px;
-  font-weight: 500;
   color: var(--basic-white);
-
   background-color: var(--basic-red);
-
   border: none;
-
 }
 
 *, *::before, *::after {
@@ -209,11 +205,12 @@ img {
 /* Slider*/
 
 .slider {
+  min-height: 431px;
   background-color: var(--basic-grey);
+  overflow: hidden;
 }
 
 .slider-list {
-  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -256,21 +253,23 @@ img {
 }
 
 .slider-list-item {
-  display: none;
-  padding-top: 82px;
-  padding-bottom: 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 30px;
   min-height: 431px;
 }
 
 .slider-list-item:nth-child(1) {
-  display: block;
+  display: flex;
 }
 
 
 .slider-list-item h3 {
   margin: 0;
-  margin-top: 2px;
-  margin-left: 3px;
   font-size: 55px;
   line-height: 55px;
   text-align: left;
@@ -280,7 +279,6 @@ img {
 
 .slider-list-item p {
   margin-top: 26px;
-  margin-left: 3px;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
@@ -295,8 +293,8 @@ img {
 .slider-list-item.first-slider::before {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: -5px;
+  right: 3px;
+  bottom: 0;
   width: 760px;
   height: 431px;
   background-image: url("../img/nerds-index-slide1.png");
@@ -304,14 +302,15 @@ img {
 }
 
 .slider-list-item.second-slider {
+  display: none;
   background-color: var(--basic-grey);
 }
 
 .slider-list-item.second-slider::before {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: -5px;
+  right: 3px;
+  bottom: 0px;
   width: 760px;
   height: 431px;
   background-image: url("../img/nerds-index-slide2.png");
@@ -319,14 +318,15 @@ img {
 }
 
 .slider-list-item.third-slider {
+  display: none;
   background-color: var(--basic-grey);
 }
 
 .slider-list-item.third-slider::before {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: -5px;
+  right: 3px;
+  bottom: 0;
   width: 760px;
   height: 431px;
   background-image: url("../img/nerds-index-slide3.png");
@@ -336,7 +336,7 @@ img {
 .button-slider {
   display: inline-block;
   margin-top: 24px;
-  padding-left: 57px;
+  padding-left: 54px;
   padding-right: 55px;
   min-width: 240px;
   font-size: 16px;
@@ -830,7 +830,10 @@ li.promo-statistics-item:last-child {
 .contacts {
   position: relative;
   margin-top: 52px;
-  padding-left: 41px;
+}
+
+.contacts img {
+  width: 100%;
 }
 
 .contacts::before {
@@ -1286,14 +1289,8 @@ a.logo-instagram::before {
 }
 
 .filter-input-checkbox:checked ~ label::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 25px;
   background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
 }
 
 
