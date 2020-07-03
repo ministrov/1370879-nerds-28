@@ -35,7 +35,7 @@ body {
   min-width: 1180px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -135,6 +135,7 @@ img {
 
 .site-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -173,7 +174,6 @@ img {
   content: "";
   position: absolute;
   display: block;
-
   top: 21px;
   left: 0;
   width: 16px;
@@ -234,8 +234,8 @@ img {
 }
 
 .slider-controls .checked::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 5px;
   left: 6px;
   width: 8px;
@@ -247,8 +247,9 @@ img {
 
 .slider-controls {
   position: absolute;
-  top: 431px;
-  left: 716px;
+  bottom: 105px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
 }
 
@@ -432,8 +433,8 @@ order: -1;
   padding-right: 39px;
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
+  line-height: 18px;
   border-radius: 3px;
 }
 
@@ -569,9 +570,9 @@ li.promo-statistics-item:last-child {
 
 
 .promo-statistics {
-  max-width: 360px;
   margin-top: -5px;
   padding-top: 224px;
+  max-width: 360px;
   background-image: url("../img/nerds-illustration.png");
   background-size: 360px 208px;
   background-repeat: no-repeat;
@@ -723,16 +724,16 @@ li.promo-statistics-item:last-child {
 	display: block;
 	margin-bottom: 9px;
 	font-size: 16px;
+  font-weight: 700;
 	line-height: 18px;
-	font-weight: 700;
 }
 
 .modal .form-input {
   margin-bottom: 34px;
   padding: 14px 12px;
   font-size: 16px;
-  line-height: 18px;
   font-weight: normal;
+  line-height: 18px;
   color: var(--basic-light-black);
   background-color: transparent;
   border: 2px solid var(--basic-popup-grey);
@@ -754,10 +755,10 @@ li.promo-statistics-item:last-child {
 }
 
 .form-textarea {
-  width: 757px;
-  height: 118px;
   padding-top: 10px;
   padding-left: 12px;
+  width: 757px;
+  height: 118px;
   font: inherit;
   color: var(--basic-light-black);
   border-radius: 5px;
@@ -778,15 +779,15 @@ li.promo-statistics-item:last-child {
 }
 
 .button-modal {
-  min-width: 259px;
   margin-top: 42px;
   margin-left: -2px;
   padding-left: 47px;
   padding-right: 52px;
-  box-sizing: border-box;
+  min-width: 259px;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
+  line-height: 18px;
+  box-sizing: border-box;
 }
 
 .modal .close-form {
@@ -899,8 +900,8 @@ li.promo-statistics-item:last-child {
 .contacts h3{
   margin-left: -2px;
   font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
+  line-height: 30px;
 }
 
 .contacts-number {
@@ -911,13 +912,13 @@ li.promo-statistics-item:last-child {
 
 .contacts p {
   display: inline-block;
-  max-width: 210px;
   margin: 0;
   margin-left: -3px;
   margin-top: 5px;
+  max-width: 210px;
   font-size: 16px;
-  line-height: 18px;
   font-style: normal;
+  line-height: 18px;
   color: var(--basic-exclusive-dark);
 
 }
@@ -1038,10 +1039,10 @@ a.logo-instagram::before {
   padding-right: 20px;
   padding-bottom: 111px;
   font-size: 55px;
-  line-height: 55px;
   font-weight: 700;
-  background-color: var(--basic-grey);
+  line-height: 55px;
   text-align: center;
+  background-color: var(--basic-grey);
 }
 
 .catalog-wrapper {
@@ -1066,8 +1067,8 @@ a.logo-instagram::before {
 }
 
   a.active::before {
-    position: absolute;
     content: "";
+    position: absolute;
     width: 74px;
     height: 2px;
     top: 37px;
@@ -1085,9 +1086,9 @@ a.logo-instagram::before {
 
 .filter-item legend {
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .range-filter {
@@ -1097,11 +1098,11 @@ a.logo-instagram::before {
 
 .range-controls {
   position: relative;
-  height: 80px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 80px;
   background-color: var(--basic-grey);
   border-radius: 5px;
 }
@@ -1144,9 +1145,9 @@ a.logo-instagram::before {
 }
 
 .price-controls label {
-  text-transform: uppercase;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+    text-transform: uppercase;
 }
 
 .price-controls input {
