@@ -835,15 +835,17 @@ li.promo-statistics-item:last-child {
 
 .contacts img {
   width: 100%;
+  height: 416px;
 }
 
 .contacts::before {
   position: absolute;
   content: "";
   top: 87px;
-  left: 862px;
+  left: 50%;
   width: 231px;
   height: 190px;
+  margin-left: 104px;
   background-image: url("../img/map-marker.png");
 }
 
@@ -851,7 +853,7 @@ li.promo-statistics-item:last-child {
   display: inline-block;
   position: absolute;
   top: 55px;
-  left: 181px;
+  left: 50%;
   margin: 0;
   padding-top: 32px;
   padding-left: 52px;
@@ -859,6 +861,7 @@ li.promo-statistics-item:last-child {
   padding-bottom: 46px;
   border-radius: 5px;
   background-color: var(--basic-white);
+  transform: translateX(-580px);
 }
 
 .social-list {
