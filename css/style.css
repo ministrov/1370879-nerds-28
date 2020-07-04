@@ -32,13 +32,13 @@
 /* Global */
 
 body {
-  min-width: 1180px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 
@@ -121,8 +121,8 @@ img {
 .main-nav {
   margin-top: 49px;
   font-size: 16px;
-  line-height: 30px;
   font-weight: 500;
+  line-height: 30px;
   color: var(--basic-black);
 
 }
@@ -136,13 +136,12 @@ img {
 .site-navigation-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
-  padding: 0;
-  padding-left: 5px;
   margin-top: 16px;
   margin-right: 50px;
-
+  padding: 0;
+  padding-left: 5px;
+  list-style: none;
 }
 
 .site-navigation-item {
@@ -206,6 +205,7 @@ img {
 
 .slider {
   min-height: 431px;
+  position: relative;
   background-color: var(--basic-grey);
   overflow: hidden;
 }
@@ -247,7 +247,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 105px;
+  bottom: 91px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -258,10 +258,9 @@ img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  position: relative;
+  min-height: 431px;
   padding-top: 26px;
   padding-bottom: 30px;
-  min-height: 431px;
 }
 
 .slider-list-item:nth-child(1) {
@@ -294,7 +293,7 @@ img {
 .slider-list-item.first-slider::before {
   content: "";
   position: absolute;
-  right: 3px;
+  right: 182px;
   bottom: 0;
   width: 760px;
   height: 431px;
@@ -310,7 +309,7 @@ img {
 .slider-list-item.second-slider::before {
   content: "";
   position: absolute;
-  right: 3px;
+  right: 182px;
   bottom: 0px;
   width: 760px;
   height: 431px;
@@ -326,7 +325,7 @@ img {
 .slider-list-item.third-slider::before {
   content: "";
   position: absolute;
-  right: 3px;
+  right: 182px;
   bottom: 0;
   width: 760px;
   height: 431px;
@@ -336,13 +335,14 @@ img {
 
 .button-slider {
   display: inline-block;
-  margin-top: 24px;
-  padding-left: 54px;
-  padding-right: 55px;
   min-width: 240px;
+  margin-top: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  text-align: center;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -371,9 +371,9 @@ img {
 .products::before {
   content: "";
   position: absolute;
+  top: 427px;
   width: 1158px;
   height: 2px;
-  top: 427px;
   background-color: var(--basic-grey);
 }
 
@@ -381,8 +381,8 @@ img {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .products-list-item {
@@ -409,8 +409,8 @@ order: -1;
   margin: 0;
   margin-bottom: 32px;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
   color: var(--special);
 }
 
@@ -429,13 +429,15 @@ order: -1;
 }
 
 .button-products {
-  padding-left: 40px;
-  padding-right: 39px;
-  box-sizing: border-box;
+  min-width: 160px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
   line-height: 18px;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .button-products:hover,
@@ -527,10 +529,10 @@ order: -1;
   display: inline-block;
   margin-bottom: 23px;
   font-size: 16px;
-  line-height: 24px;
   font-weight: bold;
-  color: var(--special);
+  line-height: 24px;
   text-transform: uppercase;
+  color: var(--special);
 }
 
 .promo-text-list {
@@ -570,9 +572,9 @@ li.promo-statistics-item:last-child {
 
 
 .promo-statistics {
+  max-width: 360px;
   margin-top: -5px;
   padding-top: 224px;
-  max-width: 360px;
   background-image: url("../img/nerds-illustration.png");
   background-size: 360px 208px;
   background-repeat: no-repeat;
@@ -591,8 +593,8 @@ li.promo-statistics-item:last-child {
   margin-bottom: 31px;
   padding-left: 18px;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 700;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -602,8 +604,8 @@ li.promo-statistics-item:last-child {
   margin: 0;
   margin-bottom: 12px;
   font-size: 45px;
-  line-height: 64px;
   font-weight: 700;
+  line-height: 64px;
 }
 
 .promo-statistics-item p:nth-child(2) {
@@ -633,9 +635,9 @@ li.promo-statistics-item:last-child {
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  padding: 0;
   margin-left: -14px;
   margin-right: -19px;
+  padding: 0;
   list-style: none;
 }
 
@@ -730,14 +732,17 @@ li.promo-statistics-item:last-child {
 
 .modal .form-input {
   margin-bottom: 34px;
-  padding: 14px 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
   color: var(--basic-light-black);
   background-color: transparent;
   border: 2px solid var(--basic-popup-grey);
-  border-radius: 5px;
+  border-radius: 3px;
   box-sizing: border-box;
   outline:none;
 }
@@ -755,22 +760,26 @@ li.promo-statistics-item:last-child {
 }
 
 .form-textarea {
-  padding-top: 10px;
-  padding-left: 12px;
   width: 757px;
   height: 118px;
+  padding-top: 10px;
+  padding-left: 12px;
   font: inherit;
   color: var(--basic-light-black);
-  border-radius: 5px;
+  border-radius: 3px;
   border: 2px solid #d7dcde;
+}
+
+.modal .form-textarea:hover {
+  border-color: var(--basic-input-hover-grey);
 }
 
 .modal .form-textarea:focus {
   border-color: var(--basic-black);
 }
 
-.modal .form-textarea:hover {
-  border-color: var(--basic-input-hover-grey);
+.modal .form-textarea:invalid {
+  border-color: var(--basic-dark-red);
 }
 
 .input-wrapper {
@@ -779,15 +788,16 @@ li.promo-statistics-item:last-child {
 }
 
 .button-modal {
+  min-width: 259px;
   margin-top: 42px;
   margin-left: -2px;
   padding-left: 47px;
   padding-right: 52px;
-  min-width: 259px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .modal .close-form {
@@ -856,7 +866,7 @@ li.promo-statistics-item:last-child {
   left: 50%;
   margin: 0;
   padding-top: 32px;
-  padding-left: 52px;
+  padding-left: 54px;
   padding-right: 48px;
   padding-bottom: 46px;
   border-radius: 5px;
@@ -928,12 +938,14 @@ li.promo-statistics-item:last-child {
 
 .button-contacts {
   display: inline-block;
+  min-width: 219px;
   margin-top: 34px;
   margin-left: -3px;
-  padding-left: 44px;
-  padding-right: 46px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -1150,16 +1162,16 @@ a.logo-instagram::before {
 .price-controls label {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .price-controls input {
   width: 80px;
-  padding: 10px;
   margin-left: 10px;
-  text-align: center;
+  padding: 10px;
   font-family: inherit;
   font-size: inherit;
+  text-align: center;
   color: var(--special);
   border: none;
   border-radius: 5px;
@@ -1172,15 +1184,15 @@ a.logo-instagram::before {
 
 .filter-item-grid {
   margin: 0;
-  padding: 0;
   margin-top: 54px;
+  padding: 0;
   border: none;
 }
 
 .filter-item-grid legend {
   font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -1195,8 +1207,8 @@ a.logo-instagram::before {
   top: 3px;
   padding-left: 10px;
   line-height: 42px;
-  cursor: pointer;
   color: var(--special);
+  cursor: pointer;
 }
 
 .filter-item-grid li {
@@ -1249,17 +1261,17 @@ a.logo-instagram::before {
 
 .filter-item-features {
   margin: 0;
-  padding: 0;
   margin-top: 36px;
   margin-bottom: 30px;
+  padding: 0;
   border: none;
 }
 
 .filter-item-features legend {
   margin-bottom: 6px;
   font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -1331,8 +1343,8 @@ a.logo-instagram::before {
 .catalog h2 {
   margin-left: 15px;
   font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -1413,11 +1425,11 @@ a.arrow-up {
 
 .button-filter {
   min-width: 260px;
-  color: var(--basic-black);
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
+  line-height: 18px;
   background-color: var(--basic-grey);
+  color: var(--basic-black);
   border-radius: 3px;
   box-sizing: border-box;
 }
@@ -1445,11 +1457,11 @@ a.arrow-up {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
   margin: 0;
   margin-top: 32px;
   margin-left: 16px;
   margin-bottom: -26px;
+  padding: 0;
 }
 
 .templates-cards ul {
@@ -1460,9 +1472,9 @@ a.arrow-up {
   position: relative;
   flex-shrink: 0;
   width: 360px;
+  margin-top: 33px;
   padding-bottom: 0;
   padding-top: 40px;
-  margin-top: 33px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -1475,8 +1487,8 @@ a.arrow-up {
 
 .templates-card-item img {
   display: block;
-  padding:0;
   margin: 0;
+  padding:0;
   border: 1px solid var(--basic-border-grey);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1490,10 +1502,10 @@ a.arrow-up {
 li.templates-card-item::before {
   content: "";
   position: absolute;
-  width: 360px;
-  height: 40px;
   top: 0;
   left: 0;
+  width: 360px;
+  height: 40px;
   background-image: url("../img/browser.png");
 }
 
@@ -1546,8 +1558,8 @@ li.templates-card-item:hover::before {
   display: inline-block;
   margin-bottom: -4px;
   font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
+  line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -1564,8 +1576,8 @@ li.templates-card-item:hover::before {
 .templates-card-item p {
   padding-bottom: 18px;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 400;
+  line-height: 18px;
   color: var(--basic-exclusive-dark);
 }
 
@@ -1575,9 +1587,11 @@ li.templates-card-item:hover::before {
   height: 50px;
   padding-top: 17px;
   padding-bottom: 15px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
   box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .button-templates:hover,
@@ -1606,19 +1620,18 @@ li.templates-card-item:hover::before {
   font-weight: 500;
   text-align: center;
   line-height: 45px;
-  border: 3px solid var(--basic-grey);
   background-color: var(--basic-white);
+  border: 3px solid var(--basic-grey);
   border-radius: 3px;
 }
 
 
 .pagination-button {
-  margin-left: 11px;
   min-width: 50px;
   height: 50px;
+  margin-left: 11px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
   text-align: center;
   line-height: 50px;
   color: var(--basic-black);
@@ -1627,12 +1640,11 @@ li.templates-card-item:hover::before {
 }
 
 .pagination-button-next {
-  margin-left: 11px;
   min-width: 260px;
   height: 50px;
+  margin-left: 11px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   line-height: 50px;
