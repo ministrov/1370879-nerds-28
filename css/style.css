@@ -5,6 +5,8 @@
   --basic-light-black: #444444;
   --basic-light-dark: #4D4D4D;
   --basic-exclusive-dark: #666666;
+
+  --toggle-grey: #ababab;
   --basic-grey: #EEEEEE;
   --basic-dark-grey: #DFDFDF;
   --basic-active-grey: #D5D5D5;
@@ -14,16 +16,20 @@
   --basic-border-grey: #F2F2F2;
   --basic-input-hover-grey: #b4b9bb;
   --basic-slider-controls-checked-grey: #C4C4C4;
+
   --basic-red: #FB565A;
   --basic-dark-red: #E74246;
   --basic-active-red: #D7373B;
+
   --basic-green: #00CA74;
   --basic-dark-green: #00BC6C;
   --basic-active-green: #00AA62;
+
   --basic-yellow: #EFC84A;
   --basic-dark-yellow: #EAB534;
   --basic-active-yellow: #E5A722;
   --basic-white: #ffffff;
+
   --basic-special-white: rgba(255,255,255,0.3);
 
   --special: #283136;
@@ -338,7 +344,7 @@ img {
   text-align: center;
   box-sizing: border-box;
   border-radius: 3px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .button-slider:hover,
@@ -559,7 +565,7 @@ li.promo-statistics-item:last-child {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--special);
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .promo-statistics {
@@ -586,7 +592,7 @@ li.promo-statistics-item:last-child {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 
@@ -597,7 +603,7 @@ li.promo-statistics-item:last-child {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .promo-statistics-item p:nth-child(2) {
@@ -607,7 +613,7 @@ li.promo-statistics-item:last-child {
   font-weight: 400;
   line-height: 18px;
   color: var(--special);
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .promo-statistics-item p:last-child {
@@ -886,7 +892,7 @@ li.promo-statistics-item:last-child {
   border-radius: 5px;
   background-color: var(--basic-white);
   transform: translateX(-580px);
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .social-list {
@@ -908,6 +914,7 @@ li.promo-statistics-item:last-child {
 
 
 .discount-text {
+  margin-top: 10px;
   margin-right: 217px;
 }
 
@@ -916,7 +923,7 @@ li.promo-statistics-item:last-child {
   font-size: 36px;
   font-weight: 700;
   line-height: 37px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .discount-text p {
@@ -935,7 +942,7 @@ li.promo-statistics-item:last-child {
 
 .contacts-number {
   display: block;
-  margin-top: 12px;
+  margin-top: 15px;
   color: var(--basic-exclusive-dark);
 }
 
@@ -949,7 +956,7 @@ li.promo-statistics-item:last-child {
   font-style: normal;
   line-height: 18px;
   color: var(--basic-exclusive-dark);
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .button-contacts {
@@ -964,7 +971,7 @@ li.promo-statistics-item:last-child {
   text-align: center;
   box-sizing: border-box;
   border-radius: 3px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .button-contacts:hover,
@@ -1003,7 +1010,7 @@ li.promo-statistics-item:last-child {
   height: 78px;
   background-color: var(--basic-light-grey);
   border-radius: 50%;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 a.logo-vk::before {
@@ -1158,7 +1165,8 @@ a.active::before {
   width: 4px;
   height: 4px;
   border: 8px solid var(--basic-white);
-  background-color: var(--basic-white);
+  background-color: var(--toggle-grey);
+  box-sizing: content-box;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
@@ -1580,7 +1588,7 @@ li.templates-card-item:hover::before {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .templates-card-item h3 a:hover,
@@ -1611,7 +1619,7 @@ li.templates-card-item:hover::before {
   text-align: center;
   box-sizing: border-box;
   border-radius: 3px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .button-templates:hover,
