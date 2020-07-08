@@ -1,7 +1,7 @@
 var buttonContacts = document.querySelector(".button-contacts");
 var popup = document.querySelector(".modal");
 var popupClose = document.querySelector(".close-form");
-var loginField = document.querySelector(".login-input");
+var loginField = document.querySelector(".form-input");
 buttonContacts.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
