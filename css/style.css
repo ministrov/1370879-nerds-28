@@ -141,6 +141,7 @@ img {
 .site-navigation-list {
   display: flex;
   flex-wrap: wrap;
+  width: 440px;
   margin: 0;
   margin-top: 16px;
   margin-right: 50px;
@@ -633,6 +634,7 @@ li.promo-statistics-item:last-child {
 .partners-list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: -14px;
   margin-right: -19px;
