@@ -853,7 +853,6 @@ li.promo-statistics-item:last-child {
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 51px;
   margin-bottom: 68px;
@@ -917,7 +916,7 @@ li.promo-statistics-item:last-child {
 
 .discount-text {
   margin-top: 10px;
-  margin-right: 217px;
+  margin-left: 128px;
 }
 
 .discount-text b {
